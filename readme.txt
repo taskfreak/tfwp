@@ -14,7 +14,7 @@ Task management plugin from the authors of TaskFreak!
 == Description ==
 
 Manage tasks for yourself or within a group, company, association, etc.
-Create pojects or teams, then add tasks and assign to users.
+Create projects or teams, then add tasks and assign to users.
 Add attachements, discuss tasks and follow their status.
 
 == Installation ==
