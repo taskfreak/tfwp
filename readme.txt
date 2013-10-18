@@ -4,8 +4,8 @@ Donate link: http://www.taskfreak.com/
 Tags: project, task, todo
 Requires at least: 3.3
 Tested up to: 3.6.1
-Stable tag: 1.0
-Version: 1.0
+Stable tag: 1.0.1
+Version: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ Task management plugin from the authors of TaskFreak!
 == Description ==
 
 Manage tasks for yourself or within a group, company, association, etc.
-Create pojects or teams, then add tasks and assign to users.
+Create projects or teams, then add tasks and assign to users.
 Add attachements, discuss tasks and follow their status.
 
 == Installation ==
@@ -50,6 +50,9 @@ http://www.taskfreak.com and see details about the pro version
 10. Settings
 
 == Changelog ==
+
+= 1.0.1 =
+Added screenshots.
 
 = 1.0 =
 Initial version
