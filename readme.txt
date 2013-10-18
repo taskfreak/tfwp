@@ -14,7 +14,7 @@ Task management plugin from the authors of TaskFreak!
 == Description ==
 
 Manage tasks for yourself or within a group, company, association, etc.
-Create projects or teams, then add tasks and assign to users.
+Create pojects or teams, then add tasks and assign to users.
 Add attachements, discuss tasks and follow their status.
 
 == Installation ==
@@ -22,7 +22,8 @@ Add attachements, discuss tasks and follow their status.
 1. Upload `taskfreak.zip` to the `/wp-content/plugins/` directory
 2. Unzip taskfreak (should create taskfreak/ folder within plugins/)
 3. Activate the plugin through the 'Plugins' menu in WordPress
-4. Place `<?php do_action('tfk_all'); ?>` in your templates or use shortcode [tfk_all] in any page or post.
+4. Insert shortcode [tfk_all] in any page or post (or insert `<?php do_action('tfk_all'); ?>` in your template)
+5. Create at least one project through the 'TaskFreak!' menu in WordPress dashboard.
 
 == Frequently Asked Questions ==
 
@@ -34,6 +35,19 @@ Go to http://www.taskfreak.com/wordpress-plugin/ for more information.
 
 If you want personnal support or have specific requests, please go to
 http://www.taskfreak.com and see details about the pro version
+
+== Screenshots ==
+
+1. After installing the plugin, go to the 'TaskFreak!' menu
+2. Create your first project
+3. Set project title, description (optional), status (or leave in 'Draft'), access rights
+4. Insert the `[tfk_all]` shortcode in a page or post
+5. View your page (or post)
+6. Your project contains no task, time to create one: click 'New Task'
+7. Enter title, set priority (1 to 3), deadline (optional), assign the task (optional), set status, ...
+8. Here's what your task list looks like if you enable the 'Proximity bar' in TaskFreak! settings
+9. View updates (depends on access rights for the viewer)
+10. Settings
 
 == Changelog ==
 
