@@ -3,9 +3,9 @@ Contributors: taskfreak, HerveRenault
 Donate link: http://www.taskfreak.com/
 Tags: projects, tasks, management, todo, list, GTD, manage projects, project management, task management, team, planning, tracking
 Requires at least: 3.3
-Tested up to: 3.6.1
-Stable tag: 1.0.2
-Version: 1.0.2
+Tested up to: 3.7
+Stable tag: 1.0.3
+Version: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,7 +21,6 @@ WordPress version of the standalone [TaskFreak!](http://taskfreak.com/) web appl
 
 It is mobile friendly (responsive design) and not intrusive (does not add bloat to your WordPress admin interface)
 
-= Quick Demo =
 [vimeo http://vimeo.com/77401609]
 
 == Installation ==
