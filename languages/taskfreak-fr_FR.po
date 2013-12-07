@@ -846,6 +846,10 @@ msgstr "Mises à jour"
 msgid "ID"
 msgstr "n°"
 
+#: inc/views/front/project_list.php:36
+msgid "No project found"
+msgstr "Aucun projet trouvé"
+
 #: inc/views/front/recent.php:36
 msgid "commented task"
 msgstr "a commenté la tâche"

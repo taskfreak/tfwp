@@ -33,7 +33,7 @@
 			echo '</tr>';
 		}
 	} else {
-		echo '<tr><td colspan="3">No project found</td></tr>';
+		echo '<tr><td colspan="3">'.__('No project found', 'taskfreak').'</td></tr>';
 	}
 	?>
 	</tbody>
