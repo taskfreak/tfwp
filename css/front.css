@@ -140,7 +140,7 @@
 #tfk_task_author_pic { float: left; padding: 0 1em 1em 0; }
 #tfk_task_project_name { font-weight: bold; }
 .tfk_task_head { margin: 0 !important; }
-#tfk_task_details { clear: both; width: 100%; display: table; padding: 1em 0 1em 2em; background-color: #eee; }
+#tfk_task_details { clear: both; width: calc(100% - 2em); display: table; padding: 1em 0 1em 2em; background-color: #eee; }
 #tfk_task_details > p { display: table-cell; padding-right: 2em; }
 #tfk_task_details > p > span { display: block; }
 #tfk_task_details > p > span:first-child { display: block; color: #888; white-space: nowrap; }
