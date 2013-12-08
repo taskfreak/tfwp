@@ -19,7 +19,15 @@ Add attachements, discuss tasks and follow their status.
 
 WordPress version of the standalone [TaskFreak!](http://taskfreak.com/) web application.
 
-It is mobile friendly (responsive design) and not intrusive (does not add bloat to your WordPress admin interface)
+Advantages :
+
+- Easy to install
+- Full integration with Wordpress users and roles
+- Create public and private projects
+- Add attachments and comment your tasks
+- Mobile devices friendly (smartphones, tablets)
+- Integrates seamlessly with your WP theme
+- Users are associated to projects by WP roles
 
 [vimeo http://vimeo.com/77401609]
 
