@@ -4,8 +4,8 @@ Donate link: http://www.taskfreak.com/
 Tags: projects, tasks, management, todo, list, GTD, manage projects, project management, task management, team, planning, tracking
 Requires at least: 3.3
 Tested up to: 3.7
-Stable tag: 1.0.4
-Version: 1.0.4
+Stable tag: 1.0.5
+Version: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -65,8 +65,20 @@ http://www.taskfreak.com and see details about the pro version
 
 == Changelog ==
 
+= 1.0.5 =
+Bugfix : Removed unused unprefixed dbg() function which clashes with WYSIJA as notified by users time4novelty and SeanBanksBliss (thank you)
+
+= 1.0.4 =
+Bugfix : Details section was a bit too wide, which triggered scrollbars on "overflow: auto" containers
+
+= 1.0.3 =
+Bugfix : Added missing french translation for "No project found"
+
+= 1.0.2 =
+Added link to video in the readme
+
 = 1.0.1 =
-Added screenshots.
+Added screenshots
 
 = 1.0 =
 Initial version
