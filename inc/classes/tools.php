@@ -444,9 +444,3 @@ class tzn_tools {
 		), $val);
 	}
 }
-
-function dbg($mess) {
-	if (WP_DEBUG) {
-		error_log($mess);
-	}
-}

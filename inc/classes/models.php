@@ -978,8 +978,6 @@ class tzn_model {
 		
 		$sql .= $sql_conditions;
 		
-		// dbg('SQL : '.$sql);
-
 		$foundrows = false; // don't count total if not needed
 
 		if (!empty($args['page_size'])) {
