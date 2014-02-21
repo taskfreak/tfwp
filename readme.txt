@@ -3,7 +3,7 @@ Contributors: taskfreak, HerveRenault
 Donate link: http://www.taskfreak.com/
 Tags: projects, tasks, management, todo, list, GTD, manage projects, project management, task management, team, planning, tracking
 Requires at least: 3.3
-Tested up to: 3.7
+Tested up to: 3.8.1
 Stable tag: 1.0.5
 Version: 1.0.5
 License: GPLv2 or later
