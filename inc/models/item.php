@@ -47,16 +47,16 @@ class tfk_item extends tzn_model
 	public function check() {
 		$msg = array();
 		if (empty($this->data['title'])) {
-			$msg['title'] = 'Title should not be blank';
+			$msg['title'] = __('Title should not be blank', 'taskfreak');
 		}
 		if (!preg_match('/^[123]$/', $this->data['priority'])) {
-			$msg['priority'] = 'Priority should be 1, 2, or 3';
+			$msg['priority'] = __('Priority should be 1, 2, or 3', 'taskfreak');
 		}
 		if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $this->data['deadline_date'])) {
-			$msg['deadline_date'] = 'Invalid date format';
+			$msg['deadline_date'] = __('Invalid date format', 'taskfreak');
 		}
 		if (strlen($this->data['description']) > 65535) {
-			$msg['description'] = 'Description is too big (maybe you pasted an image into it ?)';
+			$msg['description'] = __('Description is too big (maybe you pasted an image into it?)', 'taskfreak');
 		}
 		
 		foreach ($msg as $k => $v) {

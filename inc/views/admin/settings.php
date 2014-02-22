@@ -140,6 +140,6 @@
 		</tr>
 		</table>
 		
-		<p class="submit"><input type="submit" value="Save Changes" name="opt_save" class="button button-primary" /></p>
+		<p class="submit"><input type="submit" value="<?php _e('Save Changes', 'taskfreak') ?>" name="opt_save" class="button button-primary" /></p>
 	</form>	
 </div>

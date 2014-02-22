@@ -1,1043 +1,1252 @@
-# TaskFreak Free - French strings
-# Copyright (C) 2013 Tirzen
-# This file is distributed under the same license as the TaskFreak Free package.
 msgid ""
 msgstr ""
-"Project-Id-Version: TaskFreak Free 1.0\n"
+"Project-Id-Version: TaskFreak Free v1.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/taskfreak\n"
 "POT-Creation-Date: 2013-09-26 17:28:07+00:00\n"
-"PO-Revision-Date: 2013-09-26 09:25:41+00:00\n"
-"Last-Translator: Hervé Renault <rv@tirzen.com>\n"
+"PO-Revision-Date: 2014-01-12 17:29+0100\n"
+"Last-Translator: Ian Diggance <office@interpres.de>\n"
 "Language-Team: Tirzen <dev@tirzen.com>\n"
-"Language: French\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Textdomain-Support: yes\n"
+"Language: de_DE\n"
+"X-Poedit-SearchPath-0: .\n"
 
-#: inc/controllers/admin/project_user.php:21
-msgid "Add user to project"
-msgstr "Ajouter l'utilisateur au projet"
-
-#: inc/controllers/admin/project_user.php:31
-msgid "Edit user's position"
-msgstr "Modifier les droits de l'utilisateur"
-
-#: inc/controllers/admin/project_user_add.php:21
-#: inc/controllers/admin/project_user_edit.php:21
+# @ taskfreak
 #: inc/views/admin/project_edit.php:65 inc/views/admin/project_edit.php:80
 #: inc/views/admin/project_list.php:85 inc/views/front/task.php:21
 msgid "Edit"
-msgstr "Modifier"
+msgstr "Bearbeiten"
 
-#: inc/controllers/admin/project_user_add.php:22
-#: inc/controllers/admin/project_user_edit.php:22
-msgid "Remove"
-msgstr "Supprimer"
-
+# @ taskfreak
 #: inc/controllers/admin/settings.php:32
 msgid "Changes saved"
-msgstr "Modifications enregistrées"
+msgstr "Änderungen gespeichert"
 
+# @ taskfreak
 #: inc/controllers/admin/settings.php:34
 msgid "No changes saved"
-msgstr "Aucune modification enregistrée"
+msgstr "Keine Änderungen gespeichert"
 
-#: inc/controllers/front/project_view.php:39
+# @ taskfreak
+#: inc/controllers/front/project_view.php:37
 msgid "No such project."
-msgstr "Ce projet n'existe pas."
+msgstr "Ein solches Projekt existiert nicht."
 
-#: inc/controllers/front/project_view.php:44
+# @ taskfreak
+#: inc/controllers/front/project_view.php:42
 msgid "Sorry, you can't access this project. Please contact an admin."
 msgstr ""
-"Désolé, vous ne pouvez pas accéder à ce projet. Contactez un administrateur."
+"Leider hast Du keinen Zugang zu diesem Projekt. Kontaktiere bitte den "
+"Administrator."
 
+# @ taskfreak
 #: inc/controllers/front/task_edit.php:13
 msgid "Sorry, you can't edit tasks when logged out."
-msgstr ""
-"Désolé, vous ne pouvez pas écrire des tâches quand vous êtes déconnecté."
+msgstr "Leider kannst Du keine Aufgaben bearbeiten, wenn Du ausgeloggt bist."
 
+# @ taskfreak
 #: inc/controllers/front/task_edit.php:38
 msgid "Sorry, you can't edit this task. Please contact an admin."
 msgstr ""
-"Désolé, vous ne pouvez pas modifier cette tâche. Contactez un administrateur."
+"Leider kannst Du diese Aufgabe nicht bearbeiten. Kontaktiere bitte den "
+"Administrator."
 
+# @ taskfreak
 #: inc/controllers/front/task_edit.php:72
 msgid "Unavailable project"
-msgstr "Projet indisponible"
+msgstr "Projekt nicht verfügbar"
 
+# @ taskfreak
+#: inc/controllers/front/project_users.php:21
 #: inc/controllers/front/task_edit.php:74
 msgid "Sorry, you can't post in this project. Please contact an admin."
 msgstr ""
-"Désolé, vous ne pouvez pas écrire dans ce projet. Contactez un "
-"administrateur."
+"Leider kannst Du keinen Beitrag zu diesem Projekt schreiben. Kontaktiere "
+"bitte den Administrator."
 
+# @ taskfreak
 #: inc/controllers/front/task_edit.php:77
 msgid "Please select a user who has access to this project"
-msgstr "Choisissez un utilisateur qui a accès à ce projet"
+msgstr "Wähle einen Benutzer mit Zugang zu diesem Projekt aus."
 
+# @ taskfreak
 #: inc/controllers/front/task_edit.php:123
 msgid "Changes saved."
-msgstr "Modifications enregistrées."
+msgstr "Änderungen wurden gespeichert."
 
+# @ taskfreak
 #: inc/controllers/front/task_edit.php:131
 #: inc/controllers/front/task_view.php:105
 msgid "Upload failed. Check file size."
-msgstr "Échec du téléversement. Vérifiez la taille du fichier."
+msgstr "Hochladen fehlgeschlagen. Überprüfe die Dateigröße."
 
+# @ taskfreak
 #: inc/controllers/front/task_history.php:19
 #: inc/controllers/front/task_view.php:19
 msgid "Sorry, item not found"
-msgstr "Désolé, cette tâche n'existe pas"
+msgstr "Das Objekt konnte nicht gefunden werden"
 
+# @ taskfreak
 #: inc/controllers/front/task_history.php:23
 #: inc/controllers/front/task_view.php:23
 msgid "Missing \"view\" parameter"
-msgstr "Le paramètre \"view\" est manquant"
+msgstr "Der Parameter \"view\" fehlt"
 
+# @ taskfreak
 #: inc/controllers/front/task_status.php:13
 msgid "Sorry, request forbidden for security reasons."
-msgstr "Désolé, requête interdite pour raisons de sécurité."
+msgstr "Anfrage wurde aus Sicherheitsgründen abgelehnt."
 
+# @ taskfreak
 #: inc/controllers/front/task_status.php:28
 #: inc/controllers/front/task_status.php:45
 msgid "No such item"
-msgstr "Aucun élément trouvé"
+msgstr "Ein solches Objekt gibt es nicht"
 
+# @ taskfreak
 #: inc/controllers/front/task_status.php:32
 msgid "You can't change this status"
-msgstr "Vous ne pouvez pas changer l'état"
+msgstr "Du kannst diesen Status nicht ändern"
 
+# @ taskfreak
 #: inc/controllers/front/task_status.php:40
 msgid "Unable to set status"
-msgstr "Impossible de changer l'état"
+msgstr "Der Status konnte nicht gesetzt werden"
 
+# @ taskfreak
 #: inc/controllers/front/task_view.php:33
 msgid "Sorry, you can't read this task. Please contact an admin."
 msgstr ""
-"Désolé, vous ne pouvez pas lire cette tâche. Contactez un administrateur."
+"Leider kannst Du diese Aufgabe nicht lesen. Kontaktiere bitte den "
+"Administrator."
 
+# @ taskfreak
 #: inc/controllers/front/task_view.php:48
 msgid ""
 "Sorry, you can't comment tasks in this project. Please contact an admin."
 msgstr ""
-"Désolé, vous ne pouvez pas faire de commentaires. Contactez un "
-"administrateur."
+"Leider kannst Du keine Kommentare zu diesem Projekt schreiben. Kontaktiere "
+"bitte den Administrator."
 
+# @ taskfreak
 #: inc/controllers/front/task_view.php:75
 msgid "Uploaded file: "
-msgstr "Fichier téléversé : "
+msgstr "Hochgeladene Datei: "
 
+# @ taskfreak
 #: inc/controllers/front/task_view.php:94
 msgid "See comment"
-msgstr "Voir le commentaire"
+msgstr "Kommentar ansehen"
 
+# @ taskfreak
 #: inc/controllers/front/task_view.php:96
 msgid "Comment saved."
-msgstr "Commentaire enregistré."
+msgstr "Kommentar wurde gespeichert"
 
+# @ taskfreak
 #: inc/controllers/front.php:26
 msgid "An error has occured."
-msgstr "Une erreur s'est produite."
+msgstr "Ein Fehler ist passiert."
 
+# @ taskfreak
 #: inc/models/item.php:135 inc/views/front/list.php:114
 msgid "Undefined Deadline"
-msgstr "Date butoir inconnue"
+msgstr "Nicht definierte Frist"
 
+# @ taskfreak
 #: inc/models/item.php:143
 msgid "Past due !"
-msgstr "En retard !"
+msgstr "Frist abgelaufen!"
 
+# @ taskfreak
 #: inc/models/item.php:146
+#, php-format
 msgid "%s minute remaining"
 msgid_plural "%s minutes remaining"
-msgstr[0] "Dans %s minute"
-msgstr[1] "Dans %s minutes"
+msgstr[0] "Noch %s Minute"
+msgstr[1] "Noch %s Minuten"
 
+# @ taskfreak
 #: inc/models/item.php:149
+#, php-format
 msgid "%s hour remaining"
 msgid_plural "%s hours remaining"
-msgstr[0] "Dans %s heure"
-msgstr[1] "Dans %s heures"
+msgstr[0] "Noch %s Stunde"
+msgstr[1] "Noch %s Stunden"
 
+# @ taskfreak
 #: inc/models/item.php:152
+#, php-format
 msgid "%s day remaining"
 msgid_plural "%s days remaining"
-msgstr[0] "Dans %s jour"
-msgstr[1] "Dans %s jours"
+msgstr[0] "Noch %s Tag"
+msgstr[1] "Noch %s Tage"
 
+# @ taskfreak
 #: inc/models/item.php:154
+#, php-format
 msgid "%s month remaining"
 msgid_plural "%s months remaining"
-msgstr[0] "Dans %s mois"
-msgstr[1] "Dans %s mois"
+msgstr[0] "Noch %s Monat"
+msgstr[1] "Noch %s Monate"
 
+# @ taskfreak
 #: inc/models/item.php:207 inc/models/project.php:197
-#: inc/models/project.with_status_table.php:156
-#: inc/models/project.with_status_table.php:168
 msgid "Draft"
-msgstr "Brouillon"
+msgstr "Entwurf"
 
+# @ taskfreak
 #: inc/models/item.php:209 inc/models/project.php:199
-#: inc/models/project.with_status_table.php:158
-#: inc/models/project.with_status_table.php:169
 msgid "In Progress"
-msgstr "En cours"
+msgstr "In Arbeit"
 
+# @ taskfreak
 #: inc/models/item.php:211 inc/models/project.php:201
-#: inc/models/project.with_status_table.php:160
-#: inc/models/project.with_status_table.php:170
 msgid "Suspended"
-msgstr "Suspendu"
+msgstr "Angehalten"
 
+# @ taskfreak
 #: inc/models/item.php:213 inc/models/project.php:203
-#: inc/models/project.with_status_table.php:162
-#: inc/models/project.with_status_table.php:171
 msgid "Closed"
-msgstr "Terminé"
+msgstr "Geschlossen"
 
+# @ taskfreak
 #: inc/models/item.php:215
 msgid "Unknown Status !"
-msgstr "État inconnu !"
+msgstr "Status unbekannt!"
 
+# @ taskfreak
 #: inc/models/item.php:239
 msgctxt "tasks"
 msgid "All tasks"
-msgstr "Toutes"
+msgstr "Alle Aufgaben"
 
+# @ taskfreak
 #: inc/models/item.php:273
 msgid "Empty comment not allowed."
-msgstr "Les commentaires vides ne sont pas autorisés."
+msgstr "Leere Kommentare sind nicht erlaubt."
 
+# @ taskfreak
 #: inc/models/item.php:311
 msgid "Forbidden upload: "
-msgstr "Téléversement interdit : "
+msgstr "Hochladen nicht erlaubt : "
 
+# @ taskfreak
 #: inc/models/item.php:317
 msgid "Unable to write file to upload directory. Please tell an admin."
-msgstr "Impossible d'écrire le fichier. Merci d'avertir un administrateur."
+msgstr ""
+"Datei konnte nicht im Upload-Verzeichnis gespeichert werden. Benachrichtige "
+"bitte den Administrator.."
 
+# @ taskfreak
 #: inc/models/item.php:330
 msgid "Upload of "
-msgstr "Le téléversement de "
+msgstr "Hochladen von"
 
+# @ taskfreak
 #: inc/models/item.php:330
 msgid " failed with error code "
-msgstr " a échoué avec le code d'erreur "
+msgstr "Fehlgeschlagen mit Fehlercode"
 
+# @ taskfreak
 #: inc/models/item.php:415
+#, php-format
 msgid "%d attachment"
 msgid_plural "%d attachments"
-msgstr[0] "%d pièce jointe"
-msgstr[1] "%d pièces jointes"
+msgstr[0] "%d Anhang"
+msgstr[1] "%d Anhänge"
 
+# @ taskfreak
 #: inc/models/log.php:42
 msgid "assignee"
-msgstr "assigné(e)"
+msgstr "Beauftragte(r)"
 
+# @ taskfreak
 #: inc/models/log.php:43
 msgid "description"
-msgstr "description"
+msgstr "Beschreibung"
 
+# @ taskfreak
 #: inc/models/log.php:44
 msgid "deadline"
-msgstr "date butoir"
+msgstr "Termin"
 
+# @ taskfreak
 #: inc/models/log.php:45
 msgid "priority"
-msgstr "priorité"
+msgstr "Priorität"
 
+# @ taskfreak
 #: inc/models/log.php:46
 msgid "title"
-msgstr "titre"
+msgstr "Titel"
 
+# @ taskfreak
 #: inc/models/log.php:47
 msgid "project"
-msgstr "projet"
+msgstr "Projekt"
 
+# @ taskfreak
 #: inc/models/log.php:52
+#, php-format
 msgid "1 file"
 msgid_plural "%d files"
-msgstr[0] "1 fichier"
-msgstr[1] "%d fichiers"
+msgstr[0] "1 Datei"
+msgstr[1] "%d Dateien"
 
+# @ taskfreak
 #: inc/models/log.php:65 inc/views/front/nav.php:6
 msgid "Tasks"
-msgstr "Tâches"
+msgstr "Aufgaben"
 
+# @ taskfreak
 #: inc/models/log.php:66 inc/views/admin/project_list.php:6
-#: inc/views/front/nav.php:5
+#: inc/views/front/nav.php:5 inc/controllers/admin.php:34
 msgid "Projects"
-msgstr "Projets"
+msgstr "Projekte"
 
+# @ taskfreak
 #: inc/models/log.php:67
 msgid "Comments"
-msgstr "Commentaires"
+msgstr "Kommentare"
 
+# @ taskfreak
 #: inc/models/log.php:82
 msgctxt "updates"
 msgid "All"
-msgstr "Toutes"
+msgstr "Alle"
 
-#: inc/models/project.php:120 inc/models/project.with_status_table.php:106
-#: inc/views/admin/project_edit.php:87 inc/views/admin/settings.php:107
+# @ taskfreak
+#: inc/models/project.php:120 inc/views/admin/project_edit.php:87
+#: inc/views/admin/settings.php:107
 msgid "Any visitor"
-msgstr "Tout visiteur"
+msgstr "Alle Besucher"
 
+# @ taskfreak
 #: inc/models/project.php:182 inc/views/admin/project_list.php:19
 msgctxt "many projects"
 msgid "Draft"
-msgstr "Brouillons"
+msgstr "Entwurf"
 
+# @ taskfreak
 #: inc/models/project.php:183 inc/views/admin/dashboard.php:42
 #: inc/views/admin/project_list.php:23
 msgctxt "many projects"
 msgid "In Progress"
-msgstr "En cours"
+msgstr "In Arbeit"
 
+# @ taskfreak
 #: inc/models/project.php:184 inc/views/admin/dashboard.php:43
 #: inc/views/admin/project_list.php:24
 msgctxt "many projects"
 msgid "Suspended"
-msgstr "Suspendus"
+msgstr "Angehalten"
 
+# @ taskfreak
 #: inc/models/project.php:185 inc/views/admin/dashboard.php:44
 #: inc/views/admin/project_list.php:25
 msgctxt "many projects"
 msgid "Closed"
-msgstr "Terminés"
+msgstr "Geschlossen"
 
+# @ taskfreak
 #: inc/models/project.php:212 inc/views/admin/project_list.php:15
 msgctxt "projects"
 msgid "All"
-msgstr "Tous"
+msgstr "Alle"
 
+# @ taskfreak
 #: inc/models/project.php:249 inc/models/project.php:293
-#: inc/models/project.with_status_table.php:221
-#: inc/models/project.with_status_table.php:265
 msgid "Guest"
-msgstr "Invité"
+msgstr "Gast"
 
+# @ taskfreak
 #: inc/models/project.php:251 inc/models/project.php:294
-#: inc/models/project.with_status_table.php:223
-#: inc/models/project.with_status_table.php:266
 msgid "Client"
-msgstr "Client"
+msgstr "Mandant"
 
+# @ taskfreak
 #: inc/models/project.php:253 inc/models/project.php:295
-#: inc/models/project.with_status_table.php:225
-#: inc/models/project.with_status_table.php:267
 msgid "Staff"
-msgstr "Équipe"
+msgstr "Mitarbeiter"
 
+# @ taskfreak
 #: inc/models/project.php:255 inc/models/project.php:296
-#: inc/models/project.with_status_table.php:227
-#: inc/models/project.with_status_table.php:268
+#: inc/controllers/admin.php:34
 msgid "Manager"
-msgstr "Chef d'équipe"
+msgstr "Manager"
 
+# @ taskfreak
 #: inc/models/project.php:257 inc/models/project.php:297
-#: inc/models/project.with_status_table.php:229
-#: inc/models/project.with_status_table.php:269
 msgid "Project Leader"
-msgstr "Chef de projet"
+msgstr "Projektleiter"
 
-#: inc/views/admin/dashboard.php:3
+# @ taskfreak
+#: inc/views/admin/dashboard.php:3 inc/controllers/admin.php:33
 msgid "Dashboard"
-msgstr "Tableau de bord"
+msgstr "Dashboard"
 
+# @ taskfreak
 #: inc/views/admin/dashboard.php:9
+#, php-format
 msgid ""
 "Learn more about this plugin on the official <a href=\"%1$s\" target=\"_blank"
 "\">TaskFreak! website</a>."
 msgstr ""
-"Découvrez ce plugin sur le <a href=\"%1$s\" target=\"_blank\">site officiel "
-"de TaskFreak!</a>."
+"Besuche die <a href=\"%1$s\" target=\"_blank\">offizielle Website von "
+"TaskFreak!</a>, um mehr über dieses Plugin zu erfahren."
 
+# @ taskfreak
 #: inc/views/admin/dashboard.php:16
 msgid "Start working!"
-msgstr "C'est parti !"
+msgstr "Fang mal an!"
 
+# @ taskfreak
 #: inc/views/admin/dashboard.php:18 inc/views/admin/settings.php:23
 msgid "Recent updates"
-msgstr "Mises à jour récentes"
+msgstr "Letzte Aktualisierungen"
 
+# @ taskfreak
 #: inc/views/admin/dashboard.php:22
 msgid "Manage projects"
-msgstr "Gérer les projets"
+msgstr "Projekte verwalten"
 
+# @ taskfreak
 #: inc/views/admin/dashboard.php:26
 msgid "Learn more about TFWP"
-msgstr "Découvrez tout sur TFWP"
+msgstr "Mehr über TFWP erfahren"
 
+# @ taskfreak
 #: inc/views/admin/dashboard.php:31
+#, php-format
 msgid ""
 "To start using TaskFreak! plugin for Wordpress, you first need to add the "
 "shortcode <code>[tfk_all]</code> in one of your <a href=\"%s\">pages</a>."
 msgstr ""
-"Pour commencer à utiliser TaskFreak! pour WordPress, vous devez d'abord "
-"ajouter le shortcode <code>[tfk_all]</code> dans une de vos <a href=\"%s"
-"\">pages</a>."
+"Um mit TaskFreak! für WordPress zu arbeiten, Du musst als Erstes den "
+"Shortcode <code>[tfk_all]</code> in eine Deiner <a href=\"%s\">Seiten</a> "
+"eingeben."
 
+# @ taskfreak
 #: inc/views/admin/dashboard.php:32
+#, php-format
 msgid "You can also start by <a href=\"%s\">creating projects</a>"
-msgstr "Vous pouvez aussi commencer à <a href=\"%s\">créer des projets</a>"
+msgstr "Anfangen kannst Du auch mit <a href=\"%s\">Projekte erstellen</a>"
 
+# @ taskfreak
 #: inc/views/admin/dashboard.php:48
 msgid "My Tasks"
-msgstr "Mes tâches"
+msgstr "Meine Aufgaben"
 
+# @ taskfreak
 #: inc/views/admin/dashboard.php:54
 msgid "All Tasks"
-msgstr "Toutes les tâches"
+msgstr "Alle Aufgaben"
 
+# @ taskfreak
 #: inc/views/admin/dashboard.php:60
 msgid "My Projects"
-msgstr "Mes projets"
+msgstr "Meine Projekte"
 
+# @ taskfreak
 #: inc/views/admin/dashboard.php:66 inc/views/front/project_view.php:5
 msgid "All Projects"
-msgstr "Tous les projets"
+msgstr "Alle Projekte"
 
+# @ taskfreak
 #: inc/views/admin/dashboard.php:76
+#, php-format
 msgid ""
 "Please consider <a href=\"%s\" target=\"_blank\">making a donation</a> if "
 "you enjoy using TFWP plugin."
 msgstr ""
-"Merci de faire <a href=\"%s\" target=\"_blank\">un don</a> si vous trouvez "
-"TFWP utile."
+"Über eine <a href=\"%s\" target=\"_blank\">Spende</a> würde ich mich sehr "
+"freuen, wenn TFWP Dir gefällt."
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:4
 msgid "Edit Project"
-msgstr "Modifier le projet"
+msgstr "Projekt bearbeiten"
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:4
 msgid "New Project"
-msgstr "Nouveau projet"
+msgstr "Neues Projekt"
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:9
 msgid "Project saved successfully"
-msgstr "Projet enregistré"
+msgstr "Projekt wurde gespeichert"
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:13
 msgid "Error saving project"
-msgstr "Erreur pendant l'enregistrement du projet"
+msgstr "Ein Fehler ist beim Speichern des Projektes aufgetreten"
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:32
 msgid "Enter title here"
-msgstr "Entrer le titre ici"
+msgstr "Titel hier eintragen"
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:53
 msgid "Project Status"
-msgstr "État du projet"
+msgstr "Projektstatus"
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:61
 msgid "Status:"
-msgstr "État :"
+msgstr "Status:"
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:71 inc/views/admin/project_edit.php:103
 msgid "OK"
 msgstr "OK"
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:72 inc/views/admin/project_edit.php:104
 msgid "Cancel"
-msgstr "Annuler"
+msgstr "Abbrechen"
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:76
 msgid "Access :"
-msgstr "Accès :"
+msgstr "Zugang:"
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:84
 msgid "Who can access this project"
-msgstr "Qui peut accéder à ce projet"
+msgstr "Wer hat Zugang zu diesem Projekt"
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:91 inc/views/admin/settings.php:111
 msgid "Who can comment tasks"
-msgstr "Qui peut commenter les tâches"
+msgstr "Wer darf Kommentare zu den Aufgaben schreiben"
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:95 inc/views/admin/settings.php:117
 msgid "Who can create tasks"
-msgstr "Qui peut créer des tâches"
+msgstr "Wer darf Aufgaben erstellen"
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:99 inc/views/admin/settings.php:123
 msgid "Who can moderate the project"
-msgstr "Qui peut gérer le projet"
+msgstr "Wer darf das Projekt moderieren"
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:112
 msgid "Move to Trash"
-msgstr "Mettre à la poubelle"
+msgstr "In den Papierkorb"
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:116
 msgid "Update"
-msgstr "Mettre à jour"
+msgstr "Aktualisierung"
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:131
 msgid "Click to toggle"
-msgstr "Cliquer pour changer"
+msgstr "Mit Klick umschalten"
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:132
 msgid "Project History"
-msgstr "Historique du projet"
+msgstr "Projektchronik"
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:139 inc/views/front/list.php:87
 msgid " by "
-msgstr " par "
+msgstr "von"
 
+# @ taskfreak
 #: inc/views/admin/project_edit.php:144
 msgid "New project"
-msgstr "Nouveau projet"
+msgstr "Neues Projekt"
 
+# @ taskfreak
 #: inc/views/admin/project_list.php:9
 msgid "Add New"
-msgstr "Ajouter"
+msgstr "Neu hinzufügen"
 
+# @ taskfreak
 #: inc/views/admin/project_list.php:29
 msgid "Trash"
-msgstr "Poubelle"
+msgstr "Papierkorb"
 
+# @ taskfreak
 #: inc/views/admin/project_list.php:38 inc/views/admin/project_list.php:45
 #: inc/views/front/project_list.php:11 inc/views/front/project_list.php:18
 msgid "Name"
-msgstr "Nom"
+msgstr "Name"
 
+# @ taskfreak
 #: inc/views/admin/project_list.php:39 inc/views/admin/project_list.php:46
 #: inc/views/front/edit.php:69 inc/views/front/list.php:23
 #: inc/views/front/project_list.php:12 inc/views/front/project_list.php:19
 msgid "Status"
-msgstr "État"
+msgstr "Status"
 
+# @ taskfreak
 #: inc/views/admin/project_list.php:76
 msgid "Restore this item from the Trash"
-msgstr "Sortir cet élément de la poubelle"
+msgstr "Objekt vom Papierkorb wiederherstellen"
 
+# @ taskfreak
 #: inc/views/admin/project_list.php:77
 msgid "Restore"
-msgstr "Restaurer"
+msgstr "Wiederherstellen"
 
+# @ taskfreak
 #: inc/views/admin/project_list.php:78
 msgid "Delete this item permanently"
-msgstr "Effacer cet élément définitivement"
+msgstr "Objekt dauerhaft löschen"
 
+# @ taskfreak
 #: inc/views/admin/project_list.php:80
 msgid "Really delete this item?"
-msgstr "Vraiment supprimer cet élément ?"
+msgstr "Willst Du dieses Objekt wirklich löschen?"
 
+# @ taskfreak
 #: inc/views/admin/project_list.php:80
 msgid "Delete Permanently"
-msgstr "Effacer définitivement"
+msgstr "Dauerhaft löschen"
 
+# @ taskfreak
 #: inc/views/admin/project_list.php:85
 msgid "Edit this item"
-msgstr "Modifier cet élément"
+msgstr "Dieses Objekt bearbeiten"
 
+# @ taskfreak
 #: inc/views/admin/project_list.php:86 inc/views/admin/project_list.php:94
 msgid "View"
-msgstr "Voir"
+msgstr "Ansehen"
 
-#: inc/views/admin/settings.php:3
+# @ taskfreak
+#: inc/views/admin/settings.php:3 inc/controllers/admin.php:34
 msgid "Settings & Options"
-msgstr "Réglages et options"
+msgstr "Einstellungen & Optionen"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:15
 msgid "Setup"
-msgstr "Réglage"
+msgstr "Setup"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:18
 msgid "Default [tfk_all] view"
-msgstr "Vue [tfk_all] par défaut"
+msgstr "Vordefinierte [tfk_all] Ansicht"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:21
 msgid "List of projects"
-msgstr "Liste des projets"
+msgstr "Liste aller Projekte"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:22
 msgid "Tasks (to do)"
-msgstr "Tâches (à faire)"
+msgstr "Aufgaben (To-do)"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:25
 msgid "What shortcut [tfk_all] shows by default"
-msgstr "Ce que doit afficher par défaut le raccourci [tfk_all]"
+msgstr "Was der Shortcut [tfk_all] standardmäßig zeigt"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:29
 msgid "Display options"
-msgstr "Options d'affichage"
+msgstr "Ansichtoptionen"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:32
 msgid "Number of tasks per page"
-msgstr "Nombre de tâches par page"
+msgstr "Anzahl an Aufgaben per Seite"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:44
 msgid "Date format"
-msgstr "Format de date"
+msgstr "Datumformat"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:47
 msgid "American (mm/dd/yyyy)"
-msgstr "Américain (mm/jj/aaaa)"
+msgstr "US (mm/jj/aaaa)"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:48
 msgid "European (dd/mm/yyyy)"
-msgstr "Européen (jj/mm/aaaa)"
+msgstr "Europäisch (jj/mm/aaaa)"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:49
 msgid "Electronic (yyyy-mm-dd)"
-msgstr "Électronique (aaaa-mm-jj)"
+msgstr "Elektronik (aaaa-mm-jj)"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:54
 msgid "Time format"
-msgstr "Format d'heure"
+msgstr "Zeitformat"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:57
 msgid "24 hours"
-msgstr "24 heures"
+msgstr "24-Stunden"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:58
 msgid "12 hours"
-msgstr "12 heures"
+msgstr "12-Stunden"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:63
 msgid "Proximity bar"
-msgstr "Indicateur de proximité de la date butoir"
+msgstr "Näherungsleiste"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:66
 msgid "Visible"
-msgstr "Visible"
+msgstr "Sichtbar"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:69
 msgid "Hidden"
-msgstr "Caché"
+msgstr "Versteckt"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:73
 msgid "Updates page shows"
-msgstr "La page des mises à jour affiche"
+msgstr "Aktualisierungsseite zeigt"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:85
 msgid "No limit"
-msgstr "Pas de limite"
+msgstr "Unbegrenzt"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:87
 msgid "day(s)"
-msgstr "jour(s)"
+msgstr "Tag(e)"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:91
 msgid "Avatar size"
-msgstr "Taille de l'image d'utilisateur"
+msgstr "Größe des Avatars"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:94
 msgid "Small"
-msgstr "Petite"
+msgstr "Klein"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:95
 msgid "Medium"
-msgstr "Moyenne"
+msgstr "Mittel"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:96
 msgid "Large"
-msgstr "Grande"
+msgstr "Groß"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:101
 msgid "Default project access"
-msgstr "Droits d'accès par défaut"
+msgstr "Vorgegebener Projektzugang"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:104
 msgid "Who can access the project"
-msgstr "Qui peut accéder au projet"
+msgstr "Wer hat Zugang zu dem Projekt"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:129
 msgid "Security options"
-msgstr "Options de sécurité"
+msgstr "Sicherheitsoptionen"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:132
 msgid "Allow uploads in task comments"
-msgstr "Autoriser le téléversement de fichiers dans les commentaires"
+msgstr "Dateianhänge in Kommentaren zu Aufgaben sind erlaubt"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:135
 msgid "Yes"
-msgstr "Oui"
+msgstr "Ja"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:138
 msgid "No"
-msgstr "Non"
+msgstr "Nein"
 
+# @ taskfreak
 #: inc/views/admin/settings.php:143
 msgid "Save Changes"
-msgstr "Enregistrer"
+msgstr "Änderungen speichern"
 
+# @ taskfreak
 #: inc/views/front/edit.php:8 inc/views/front/task.php:10
 msgid "Back to list"
-msgstr "Retour à la liste"
+msgstr "Zurück zur Liste"
 
+# @ taskfreak
 #: inc/views/front/edit.php:9
 msgid "Edit Task"
-msgstr "Modifier la tâche"
+msgstr "Aufgabe bearbeiten"
 
+# @ taskfreak
 #: inc/views/front/edit.php:9 inc/views/front/list.php:2
 msgid "New Task"
-msgstr "Nouvelle tâche"
+msgstr "Neue Aufgabe"
 
+# @ taskfreak
 #: inc/views/front/edit.php:13 inc/views/front/list.php:20
 msgid "Title"
-msgstr "Titre"
+msgstr "Titel"
 
+# @ taskfreak
 #: inc/views/front/edit.php:18
 msgid "Project"
-msgstr "Projet"
+msgstr "Projekt"
 
+# @ taskfreak
 #: inc/views/front/edit.php:31
 msgid "Create a project first, please"
-msgstr "Créez un projet d'abord, s'il vous plait"
+msgstr "Bitte zunächst ein Projekt erstellen"
 
+# @ taskfreak
 #: inc/views/front/edit.php:36 inc/views/front/list.php:19
 msgid "Priority"
-msgstr "Priorité"
+msgstr "Priorität"
 
+# @ taskfreak
 #: inc/views/front/edit.php:46
 msgid "Deadline"
-msgstr "Date butoir"
+msgstr "Frist"
 
+# @ taskfreak
 #: inc/views/front/edit.php:51 inc/views/front/edit.php:55
 msgid "Calendar"
-msgstr "Calendrier"
+msgstr "Kalender"
 
+# @ taskfreak
 #: inc/views/front/edit.php:52
 msgid "Click to show calendar"
-msgstr "Cliquez pour voir le calendrier"
+msgstr "Klicken, um Kalender anzuzeigen "
 
+# @ taskfreak
 #: inc/views/front/edit.php:59 inc/views/front/list.php:56
 msgid "Assigned to"
-msgstr "Assignée à"
+msgstr "Beauftragt:"
 
+# @ taskfreak
 #: inc/views/front/edit.php:95 inc/views/front/task.php:121
 msgid "Add a File:"
-msgstr "Ajouter un fichier :"
+msgstr "Datei hinzufügen:"
 
+# @ taskfreak
 #: inc/views/front/edit.php:97 inc/views/front/edit.php:98
 #: inc/views/front/edit.php:99 inc/views/front/edit.php:100
 #: inc/views/front/task.php:123 inc/views/front/task.php:124
 msgid "more"
-msgstr "plus"
+msgstr "weitere"
 
+# @ taskfreak
 #: inc/views/front/edit.php:107
 msgid "Attached Files:"
-msgstr "Fichiers joints :"
+msgstr "Angehängte Dateien:"
 
+# @ taskfreak
 #: inc/views/front/edit.php:120
 msgid "Save Task"
-msgstr "Enregistrer la tâche"
+msgstr "Aufgabe speichern"
 
+# @ taskfreak
 #: inc/views/front/list.php:11
 msgid "task"
 msgid_plural "tasks"
-msgstr[0] "tâche"
-msgstr[1] "tâches"
+msgstr[0] "Aufgabe"
+msgstr[1] "Aufgaben"
 
+# @ taskfreak
 #: inc/views/front/list.php:14
 msgid "Sort by:"
-msgstr "Trier par :"
+msgstr "Sortieren nach:"
 
+# @ taskfreak
 #: inc/views/front/list.php:17
 msgid "Deadline proximity"
-msgstr "Proximité date butoir"
+msgstr "Zeit bis zum Frist"
 
+# @ taskfreak
 #: inc/views/front/list.php:18
 msgid "Deadline date"
-msgstr "Date butoir"
+msgstr "Fristablauf"
 
+# @ taskfreak
 #: inc/views/front/list.php:21
 msgid "Assignee"
-msgstr "Assignée à"
+msgstr "Beauftragte(r)"
 
+# @ taskfreak
 #: inc/views/front/list.php:22
 msgid "Modification date"
-msgstr "Date de modification"
+msgstr "Änderungsdatum"
 
+# @ taskfreak
 #: inc/views/front/list.php:56 inc/views/front/list.php:78
 #: inc/views/front/list.php:87 inc/views/front/recent.php:30
 #: inc/views/front/task.php:30 inc/views/front/task.php:33
 #: inc/views/front/task.php:38 inc/views/front/task.php:95
 #: inc/views/front/task_history.php:25
 msgid "[deleted user]"
-msgstr "[utilisateur supprimé]"
+msgstr "[gelöschter Benutzer]"
 
+# @ taskfreak
 #: inc/views/front/list.php:57 inc/views/front/list.php:78
 #: inc/views/front/task.php:38
 msgid "Unassigned"
-msgstr "Non-assignée"
+msgstr "Nicht beauftragt"
 
+# @ taskfreak
 #: inc/views/front/list.php:63 inc/views/front/list.php:135
 #: inc/views/front/task.php:56
 msgctxt "one task"
 msgid "Closed"
-msgstr "Terminée"
+msgstr "Geschlossen"
 
+# @ taskfreak
 #: inc/views/front/list.php:77
 msgid "Prio.:"
-msgstr "Prio. :"
+msgstr "Prio.:"
 
+# @ taskfreak
 #: inc/views/front/list.php:81
 msgid "Add.: "
-msgstr "Ajout : "
+msgstr "Hinzu.: "
 
+# @ taskfreak
 #: inc/views/front/list.php:84
 msgid "Mod.: "
-msgstr "Modif. : "
+msgstr "Geänd.: "
 
+# @ taskfreak
+#. gettext fix: identical singular and plural forms found, that may be ambiguous! Please check the code!
 #: inc/views/front/list.php:93 inc/views/front/list.php:98
 #: inc/views/front/task.php:82
 msgid "comment"
 msgid_plural "comments"
-msgstr[0] "commentaire"
-msgstr[1] "commentaires"
+msgstr[0] "Kommentar"
+msgstr[1] "Kommentare"
 
+# @ taskfreak
 #: inc/views/front/task.php:25
 msgid "Comment"
-msgstr "Commenter"
+msgstr "Kommentar"
 
+# @ taskfreak
 #: inc/views/front/list.php:106 inc/views/front/task.php:71
 msgid "Attached files"
-msgstr "Fichiers joints"
+msgstr "Angehängte Dateien"
 
+# @ taskfreak
 #: inc/views/front/list.php:115 inc/views/front/task.php:37
 msgid "Deadline:"
-msgstr "Date butoir :"
+msgstr "Termin:"
 
+# @ taskfreak
 #: inc/views/front/list.php:119 inc/views/front/task.php:40
 msgid "Change Status:"
-msgstr "Changer l'état :"
+msgstr "Status ändern:"
 
+# @ taskfreak
 #: inc/views/front/list.php:124 inc/views/front/task.php:45
 msgid "Click to mark as In Progress"
-msgstr "Cliquer pour positionner à En cours"
+msgstr "Klicken, um als 'In Arbeit' zu markieren"
 
+# @ taskfreak
 #: inc/views/front/list.php:125 inc/views/front/task.php:46
 msgctxt "one task"
 msgid "In Progress"
-msgstr "En cours"
+msgstr "In Arbeit"
 
+# @ taskfreak
 #: inc/views/front/list.php:129 inc/views/front/task.php:50
 msgid "Click to mark as Suspended"
-msgstr "Cliquer pour positionner à Suspendue"
+msgstr "Klicken, um als 'Angehalten' zu markieren"
 
+# @ taskfreak
 #: inc/views/front/list.php:130 inc/views/front/task.php:51
 msgctxt "one task"
 msgid "Suspended"
-msgstr "Suspendue"
+msgstr "Angehalten"
 
+# @ taskfreak
 #: inc/views/front/list.php:134 inc/views/front/task.php:55
 msgid "Click to mark as Closed"
-msgstr "Cliquer pour positionner à Terminée"
+msgstr "Klicken, um als 'Geschlossen' zu markieren"
 
+# @ taskfreak
 #: inc/views/front/list.php:137 inc/views/front/task.php:58
 msgid "Current Status: "
-msgstr "État actuel : "
+msgstr "Aktueller Status: "
 
+# @ taskfreak
 #: inc/views/front/list.php:149
 msgid "Page:"
-msgstr "Page :"
+msgstr "Seite:"
 
+# @ taskfreak
 #: inc/views/front/list.php:160
 msgid "Results per page:"
-msgstr "Résultats par page :"
+msgstr "Ergebnisse per Seite:"
 
+# @ taskfreak
 #: inc/views/front/list.php:174
 msgid "No item found"
-msgstr "Aucun élément trouvé"
+msgstr "Kein Objekt gefunden"
 
+# @ taskfreak
 #: inc/views/front/nav.php:7
 msgid "Updates"
-msgstr "Mises à jour"
+msgstr "Aktualisierungen"
 
+# @ taskfreak
 #: inc/views/front/project_list.php:10 inc/views/front/project_list.php:17
 msgid "ID"
-msgstr "n°"
+msgstr "ID"
 
+# @ taskfreak
 #: inc/views/front/project_list.php:36
 msgid "No project found"
-msgstr "Aucun projet trouvé"
+msgstr "Kein Projekt gefunden"
 
+# @ taskfreak
 #: inc/views/front/recent.php:36
 msgid "commented task"
-msgstr "a commenté la tâche"
+msgstr "Aufgabe mit Kommentar(en)"
 
+# @ taskfreak
 #: inc/views/front/recent.php:38
 msgid "created task"
-msgstr "a créé la tâche"
+msgstr "Erstellte Aufgabe"
 
+# @ taskfreak
 #: inc/views/front/recent.php:40
 msgid "set task"
-msgstr "a positionné la tâche"
+msgstr "Aufgabe einstellen"
 
+# @ taskfreak
 #: inc/views/front/recent.php:40 inc/views/front/recent.php:48
 msgid "to"
-msgstr "à"
+msgstr "als"
 
+# @ taskfreak
 #: inc/views/front/recent.php:42
 msgid "modified task"
-msgstr "a modifié la tâche"
+msgstr "Geänderte Aufgabe"
 
+# @ taskfreak
 #: inc/views/front/recent.php:46
 msgid "created project"
-msgstr "a créé le projet"
+msgstr "Erstelltes Projekt"
 
+# @ taskfreak
 #: inc/views/front/recent.php:48
 msgid "set project"
-msgstr "a positionné le projet"
+msgstr "Projekt einstellen"
 
+# @ taskfreak
 #: inc/views/front/recent.php:50
 msgid "modified project"
-msgstr "a modifié le projet"
+msgstr "Geändertes Projekt"
 
+# @ taskfreak
 #: inc/views/front/recent.php:56
 msgid "Nothing, for the moment"
-msgstr "Rien, pour le moment"
+msgstr "Im moment nichts"
 
+# @ taskfreak
 #: inc/views/front/status.php:5
 msgid "OK ! Task has been set to "
-msgstr "OK ! La tâche a été positionnée à "
+msgstr "OK ! Aufgabe wurde eingestellt als "
 
+# @ taskfreak
 #: inc/views/front/status.php:7
 msgid "Sorry, an error has occured."
-msgstr "Désolé, une erreur s'est produite."
+msgstr "Sorry, ein Fehler ist aufgetreten."
 
+# @ taskfreak
 #: inc/views/front/task.php:16 inc/views/front/task_history.php:10
 msgid "In"
-msgstr "Dans"
+msgstr "In"
 
+# @ taskfreak
 #: inc/views/front/task.php:30
 msgid "Task created by"
-msgstr "Tâche créée par"
+msgstr "Aufgabe erstellt von"
 
+# @ taskfreak
 #: inc/views/front/task.php:33
 msgid "By"
-msgstr "Par"
+msgstr "Von"
 
+# @ taskfreak
 #: inc/views/front/task.php:34
 msgid "On"
-msgstr "Le"
+msgstr "Am"
 
+# @ taskfreak
 #: inc/views/front/task.php:36
 msgid "Priority:"
-msgstr "Priorité :"
+msgstr "Priorität:"
 
+# @ taskfreak
 #: inc/views/front/task.php:38
 msgid "Assigned To:"
-msgstr "Assigné à :"
+msgstr "Beauftragte(r):"
 
+# @ taskfreak
 #: inc/views/front/task.php:62
 msgid "Show History"
-msgstr "Voir l'historique"
+msgstr "Chronik anzeigen"
 
+# @ taskfreak
 #: inc/views/front/task.php:63
 msgid "Hide History"
-msgstr "Cacher l'historique"
+msgstr "Chronik verstecken"
 
+# @ taskfreak
 #: inc/views/front/task.php:106
 msgid "Add a Comment:"
-msgstr "Ajouter un commentaire :"
+msgstr "Kommentar hinzufügen:"
 
+# @ taskfreak
 #: inc/views/front/task.php:130
 msgid "Save Comment"
-msgstr "Enregistrer le commentaire"
+msgstr "Kommentar speichern"
 
+# @ taskfreak
 #: inc/views/front/task_history.php:4
 msgid "Back to task"
-msgstr "Retour"
+msgstr "Zurück zur Aufgabe"
 
+# @ taskfreak
 #: inc/views/front/task_history.php:12
 msgid "Task history"
-msgstr "Historique"
+msgstr "Aufgabenchronik"
 
+# @ taskfreak
 #: inc/views/front/task_history.php:17
 msgid "Date"
-msgstr "Date"
+msgstr "Datum"
 
+# @ taskfreak
 #: inc/views/front/task_history.php:18
 msgid "User"
-msgstr "Utilisateur"
+msgstr "Benutzer"
 
+# @ taskfreak
 #: inc/views/front/task_history.php:19
 msgid "Action"
-msgstr "Action"
+msgstr "Aktion"
 
+# @ taskfreak
 #: inc/views/front/task_history.php:32
 msgid "Modified"
-msgstr "Modifiée"
+msgstr "Geändert"
 
-#. Plugin Name of the plugin/theme
-msgid "TaskFreak Free"
-msgstr "TaskFreak Free"
+# @ taskfreak
+#: inc/models/item.php:188
+msgctxt ""
+msgid "Draft"
+msgstr "Entwurf"
 
-#. Plugin URI of the plugin/theme
-msgid "http://www.taskfreak.com"
-msgstr "http://www.taskfreak.com"
+# @ taskfreak
+#: inc/models/item.php:189
+msgctxt ""
+msgid "In Progress"
+msgstr "In Arbeit"
 
-#. Description of the plugin/theme
-msgid "Task Management made easy"
-msgstr "La gestion de tâches facile"
+# @ taskfreak
+#: inc/models/item.php:190
+msgctxt ""
+msgid "Suspended"
+msgstr "Angehalten"
 
-#. Author of the plugin/theme
-msgid "Tirzen"
-msgstr "Tirzen"
-
-#. Author URI of the plugin/theme
-msgid "http://www.tirzen.com"
-msgstr "http://www.tirzen.fr"
+# @ taskfreak
+#: inc/models/item.php:191
+msgctxt ""
+msgid "Closed"
+msgstr "Geschlossen"
 
 msgctxt "one task"
 msgid "Draft"
-msgstr "Brouillon"
+msgstr "Entwurf"
 
 msgctxt "many tasks"
 msgid "Draft"
-msgstr "Brouillons"
+msgstr "Entwurf"
 
 msgctxt "many tasks"
 msgid "In Progress"
-msgstr "En cours"
+msgstr "In Arbeit"
 
 msgctxt "many tasks"
 msgid "Suspended"
-msgstr "Suspendues"
+msgstr "Angehalten"
 
 msgctxt "many tasks"
 msgid "Closed"
-msgstr "Terminées"
+msgstr "Geschlossen"
 
 msgctxt "one project"
 msgid "Draft"
-msgstr "Brouillon"
+msgstr "Entwurf"
 
 msgctxt "one project"
 msgid "In Progress"
-msgstr "En cours"
+msgstr "In Arbeit"
 
 msgctxt "one project"
 msgid "Suspended"
-msgstr "Suspendu"
+msgstr "Angehalten"
 
 msgctxt "one project"
 msgid "Closed"
-msgstr "Terminé"
+msgstr "Geschlossen"
 
+# @ taskfreak
 #: inc/controllers/admin.php:33
 msgid "Administrator Dashboard"
-msgstr "Tableau de bord"
+msgstr "Administrator-Dashboard"
 
+# @ taskfreak
 #: inc/controllers/admin.php:35
 msgid "Settings"
-msgstr "Réglages"
+msgstr "Einstellungen"
 
+# @ taskfreak
 #: inc/models/item.php:50 
 msgid "Title should not be blank"
-msgstr "Le titre ne peut pas être vide"
+msgstr "Titel sollte nicht leer sein"
 
+# @ taskfreak
 #: inc/models/item.php:53 
 msgid "Priority should be 1, 2, or 3"
-msgstr "La priorité doit être 1, 2, ou 3"
+msgstr "Priorität sollte 1, 2 oder 3 sein"
 
+# @ taskfreak
 #: inc/models/item.php:56 
 msgid "Invalid date format"
-msgstr "Format de date erroné"
+msgstr "Ungültiges Datumformat"
 
+# @ taskfreak
 #: inc/models/item.php:59 
 msgid "Description is too big (maybe you pasted an image into it?)"
-msgstr "Description trop longue (vous avez peut-être inséré une image ?)"
+msgstr "Beschreibung ist zu groß (hast Du vielleicht eine Grafik eingefügt?)"
+

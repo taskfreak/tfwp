@@ -30,9 +30,9 @@ class tfk_admin extends tzn_controller {
 		// menu section
 		add_menu_page('TaskFreak!', 'TaskFreak!', 'read', 'taskfreak', array($this,'page_dashboard'), plugins_url('/img/logo.16.png', TFK_ROOT_FILE), 55);
 		// submenu
-		add_submenu_page('taskfreak', 'Administrator Dashboard', 'Dashboard', 'read', 'taskfreak', array($this, 'page_dashboard')); // all WP users
-		add_submenu_page('taskfreak', 'Manage projects', 'Projects', 'publish_posts', 'taskfreak_projects', array($this, 'page_projects')); // author
-		add_submenu_page('taskfreak', 'Settings &amp; Options', 'Settings', 'manage_options', 'taskfreak_settings', array($this, 'page_settings')); // administrator
+		add_submenu_page('taskfreak', __('Administrator Dashboard', 'taskfreak'), __('Dashboard', 'taskfreak'), 'read', 'taskfreak', array($this, 'page_dashboard')); // all WP users
+		add_submenu_page('taskfreak', __('Manage projects', 'taskfreak'), __('Projects', 'taskfreak'), 'publish_posts', 'taskfreak_projects', array($this, 'page_projects')); // author
+		add_submenu_page('taskfreak', __('Settings & Options', 'taskfreak'), __('Settings', 'taskfreak'), 'manage_options', 'taskfreak_settings', array($this, 'page_settings')); // administrator
 	}
 	
 	/**
