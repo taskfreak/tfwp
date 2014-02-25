@@ -19,6 +19,8 @@ Add attachements, discuss tasks and follow their status.
 
 WordPress version of the standalone [TaskFreak!](http://taskfreak.com/) web application.
 
+Available in English, German, French. (language contributors welcome !)
+
 Advantages :
 
 - Easy to install
