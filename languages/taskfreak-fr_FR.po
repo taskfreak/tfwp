@@ -157,7 +157,7 @@ msg_pt-br "Enviar arquivo:"
 #: inc/controllers/front/task_view.php:94
 msgid "See comment"
 msgstr "Voir le commentaire"
-msg_pt-br "Ver comentario"
+msg_pt-br "Ver comentário"
 
 #: inc/controllers/front/task_view.php:96
 msgid "Comment saved."
