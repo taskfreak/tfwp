@@ -273,7 +273,7 @@ msg_pt-br "Envio de "
 #: inc/models/item.php:330
 msgid " failed with error code "
 msgstr " a échoué avec le code d'erreur "
-msg_pt-br " falha com códio de erro "
+msg_pt-br " falha com código de erro "
 
 #: inc/models/item.php:415
 msgid "%d attachment"
