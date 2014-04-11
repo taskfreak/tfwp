@@ -418,7 +418,7 @@ msg_pt-br "Gerente de projeto"
 #: inc/views/admin/dashboard.php:3
 msgid "Dashboard"
 msgstr "Tableau de bord"
-msg_pt-br "Dashboad"
+msg_pt-br "Painel de Controle"
 
 #: inc/views/admin/dashboard.php:9
 msgid ""
@@ -521,7 +521,7 @@ msg_pt-br "Entre com o título aqui"
 #: inc/views/admin/project_edit.php:53
 msgid "Project Status"
 msgstr "État du projet"
-msg_pt-br "Status do projeto"
+msg_pt-br "Status do Projeto"
 
 #: inc/views/admin/project_edit.php:61
 msgid "Status:"
