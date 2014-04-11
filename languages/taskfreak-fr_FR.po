@@ -157,7 +157,7 @@ msg_pt-br "Enviar arquivo:"
 #: inc/controllers/front/task_view.php:94
 msgid "See comment"
 msgstr "Voir le commentaire"
-msg_pt-br "Ver comentario"
+msg_pt-br "Ver comentário"
 
 #: inc/controllers/front/task_view.php:96
 msgid "Comment saved."
@@ -280,6 +280,8 @@ msgid "%d attachment"
 msgid_plural "%d attachments"
 msgstr[0] "%d pièce jointe"
 msgstr[1] "%d pièces jointes"
+msg_pt-br[0] "%d anexo"
+msg_pt-br[1] "%d anexos"
 
 #: inc/models/log.php:42
 msgid "assignee"
@@ -413,7 +415,7 @@ msg_pt-br "Gerente"
 #: inc/models/project.with_status_table.php:269
 msgid "Project Leader"
 msgstr "Chef de projet"
-msg_pt-br "Gerente de projeto"
+msg_pt-br "Gerente de Projeto"
 
 #: inc/views/admin/dashboard.php:3
 msgid "Dashboard"
@@ -462,17 +464,17 @@ msg_pt-br "Para começar a usar o plugin para WordPress TaskFreak!, primeiro voc
 #: inc/views/admin/dashboard.php:32
 msgid "You can also start by <a href=\"%s\">creating projects</a>"
 msgstr "Vous pouvez aussi commencer à <a href=\"%s\">créer des projets</a>"
-msg_pt-br "Você também pode começar <a href=\"%s\">criando projetos</a>"
+msg_pt-br "Você também pode começar em <a href=\"%s\">criando projetos</a>"
 
 #: inc/views/admin/dashboard.php:48
 msgid "My Tasks"
 msgstr "Mes tâches"
-msg_pt-br "Minhas tarefas"
+msg_pt-br "Minhas Tarefas"
 
 #: inc/views/admin/dashboard.php:54
 msgid "All Tasks"
 msgstr "Toutes les tâches"
-msg_pt-br "Todas as tarefas"
+msg_pt-br "Todas as Tarefas"
 
 #: inc/views/admin/dashboard.php:60
 msgid "My Projects"
@@ -521,7 +523,7 @@ msg_pt-br "Entre com o título aqui"
 #: inc/views/admin/project_edit.php:53
 msgid "Project Status"
 msgstr "État du projet"
-msg_pt-br "Status do projeto"
+msg_pt-br "Status do Projeto"
 
 #: inc/views/admin/project_edit.php:61
 msgid "Status:"
@@ -639,7 +641,7 @@ msg_pt-br "Realmente apagar este item?"
 #: inc/views/admin/project_list.php:80
 msgid "Delete Permanently"
 msgstr "Effacer définitivement"
-msg_pt-br "Apagar permanentemente"
+msg_pt-br "Apagar Permanentemente"
 
 #: inc/views/admin/project_list.php:85
 msgid "Edit this item"
@@ -679,7 +681,7 @@ msg_pt-br "Tarefas (a fazer)"
 #: inc/views/admin/settings.php:25
 msgid "What shortcut [tfk_all] shows by default"
 msgstr "Ce que doit afficher par défaut le raccourci [tfk_all]"
-msg_pt-br "Qual atalho mostar como padrão [tfk_all]"
+msg_pt-br "O atalho [tfk_all] mostra como padrão"
 
 #: inc/views/admin/settings.php:29
 msgid "Display options"
@@ -881,12 +883,12 @@ msg_pt-br "mais"
 #: inc/views/front/edit.php:107
 msgid "Attached Files:"
 msgstr "Fichiers joints :"
-msg_pt-br "Anexar arquivo:"
+msg_pt-br "Anexar Arquivo:"
 
 #: inc/views/front/edit.php:120
 msgid "Save Task"
 msgstr "Enregistrer la tâche"
-msg_pt-br "Salvar tarefa"
+msg_pt-br "Salvar Tarefa"
 
 #: inc/views/front/list.php:11
 msgid "task"
@@ -919,7 +921,7 @@ msg_pt-br "Atribuído a"
 #: inc/views/front/list.php:22
 msgid "Modification date"
 msgstr "Date de modification"
-msg_pt-br "Data de modificação"
+msg_pt-br "Data de Modificação"
 
 #: inc/views/front/list.php:56 inc/views/front/list.php:78
 #: inc/views/front/list.php:87 inc/views/front/recent.php:30
@@ -964,6 +966,8 @@ msgid "comment"
 msgid_plural "comments"
 msgstr[0] "commentaire"
 msgstr[1] "commentaires"
+msg_pt-br[0] "comentário"
+msg_pt-br[1] "comentários"
 
 #: inc/views/front/task.php:25
 msgid "Comment"
