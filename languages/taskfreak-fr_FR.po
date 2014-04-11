@@ -77,7 +77,7 @@ msg_pt-br "Desculpe, você não pode editar esta tarefa. Por favor contate o adm
 #: inc/controllers/front/task_edit.php:72
 msgid "Unavailable project"
 msgstr "Projet indisponible"
-msg_pt-br "Projeto indisponível"
+msg_pt-br "Projeto Indisponível"
 
 #: inc/controllers/front/task_edit.php:74
 msgid "Sorry, you can't post in this project. Please contact an admin."
@@ -94,7 +94,7 @@ msg_pt-br "Por favor selecione um usuário que pode ter acesso a este projeto"
 #: inc/controllers/front/task_edit.php:123
 msgid "Changes saved."
 msgstr "Modifications enregistrées."
-msg_pt-br "Alterações salvas"
+msg_pt-br "Alterações Salvas"
 
 #: inc/controllers/front/task_edit.php:131
 #: inc/controllers/front/task_view.php:105
@@ -157,7 +157,7 @@ msg_pt-br "Enviar arquivo:"
 #: inc/controllers/front/task_view.php:94
 msgid "See comment"
 msgstr "Voir le commentaire"
-msg_pt-br "Ver comentário"
+msg_pt-br "Ver comentario"
 
 #: inc/controllers/front/task_view.php:96
 msgid "Comment saved."
@@ -273,7 +273,7 @@ msg_pt-br "Envio de "
 #: inc/models/item.php:330
 msgid " failed with error code "
 msgstr " a échoué avec le code d'erreur "
-msg_pt-br " falha com código de erro "
+msg_pt-br " falha com códio de erro "
 
 #: inc/models/item.php:415
 msgid "%d attachment"
@@ -521,7 +521,7 @@ msg_pt-br "Entre com o título aqui"
 #: inc/views/admin/project_edit.php:53
 msgid "Project Status"
 msgstr "État du projet"
-msg_pt-br "Status do Projeto"
+msg_pt-br "Status do projeto"
 
 #: inc/views/admin/project_edit.php:61
 msgid "Status:"
@@ -639,7 +639,7 @@ msg_pt-br "Realmente apagar este item?"
 #: inc/views/admin/project_list.php:80
 msgid "Delete Permanently"
 msgstr "Effacer définitivement"
-msg_pt-br "Apagar Permanentemente"
+msg_pt-br "Apagar permanentemente"
 
 #: inc/views/admin/project_list.php:85
 msgid "Edit this item"
@@ -809,7 +809,7 @@ msg_pt-br "Não"
 #: inc/views/admin/settings.php:143
 msgid "Save Changes"
 msgstr "Enregistrer"
-msg_pt-br "Alterações salvas"
+msg_pt-br "Alterações Salvas"
 
 #: inc/views/front/edit.php:8 inc/views/front/task.php:10
 msgid "Back to list"
@@ -819,7 +819,7 @@ msg_pt-br "Voltar para lista"
 #: inc/views/front/edit.php:9
 msgid "Edit Task"
 msgstr "Modifier la tâche"
-msg_pt-br "Editar tarefa"
+msg_pt-br "Editar Tarefa"
 
 #: inc/views/front/edit.php:9 inc/views/front/list.php:2
 msgid "New Task"
@@ -928,7 +928,7 @@ msg_pt-br "Data de modificação"
 #: inc/views/front/task_history.php:25
 msgid "[deleted user]"
 msgstr "[utilisateur supprimé]"
-msg_pt-br "[excluir usuário]"
+msg_pt-br "[usuário excluído]"
 
 #: inc/views/front/list.php:57 inc/views/front/list.php:78
 #: inc/views/front/task.php:38
@@ -1015,7 +1015,7 @@ msg_pt-br "Clique para marcar como Concluído"
 #: inc/views/front/list.php:137 inc/views/front/task.php:58
 msgid "Current Status: "
 msgstr "État actuel : "
-msg_pt-br "Estado atual: "
+msg_pt-br "Estado Atual: "
 
 #: inc/views/front/list.php:149
 msgid "Page:"
@@ -1070,7 +1070,7 @@ msg_pt-br "para"
 #: inc/views/front/recent.php:42
 msgid "modified task"
 msgstr "a modifié la tâche"
-msg_pt-br "modificar tarefa"
+msg_pt-br "tarefa modificada"
 
 #: inc/views/front/recent.php:46
 msgid "created project"
@@ -1080,7 +1080,7 @@ msg_pt-br "projeto criado"
 #: inc/views/front/recent.php:48
 msgid "set project"
 msgstr "a positionné le projet"
-msg_pt-br "projeto definido"
+msg_pt-br "definir projeto"
 
 #: inc/views/front/recent.php:50
 msgid "modified project"
@@ -1110,12 +1110,12 @@ msg_pt-br "Dentro"
 #: inc/views/front/task.php:30
 msgid "Task created by"
 msgstr "Tâche créée par"
-msg_pt-br "Tarefa criada para"
+msg_pt-br "Tarefa criada por"
 
 #: inc/views/front/task.php:33
 msgid "By"
 msgstr "Par"
-msg_pt-br "Para"
+msg_pt-br "Por"
 
 #: inc/views/front/task.php:34
 msgid "On"
@@ -1135,27 +1135,27 @@ msg_pt-br "Definido para:"
 #: inc/views/front/task.php:62
 msgid "Show History"
 msgstr "Voir l'historique"
-msg_pt-br "Mostrar histórico"
+msg_pt-br "Mostrar Histórico"
 
 #: inc/views/front/task.php:63
 msgid "Hide History"
 msgstr "Cacher l'historique"
-msg_pt-br "Esconder histórico"
+msg_pt-br "Esconder Histórico"
 
 #: inc/views/front/task.php:106
 msgid "Add a Comment:"
 msgstr "Ajouter un commentaire :"
-msg_pt-br "Adicionar um comentário:"
+msg_pt-br "Adicionar um Comentário:"
 
 #: inc/views/front/task.php:130
 msgid "Save Comment"
 msgstr "Enregistrer le commentaire"
-msg_pt-br "Salvar comentário"
+msg_pt-br "Salvar Comentário"
 
 #: inc/views/front/task_history.php:4
 msgid "Back to task"
 msgstr "Retour"
-msg_pt-br "Voltar para tarefas"
+msg_pt-br "Voltar para Tarefas"
 
 #: inc/views/front/task_history.php:12
 msgid "Task history"
@@ -1194,7 +1194,7 @@ msgstr "http://www.taskfreak.com"
 #. Description of the plugin/theme
 msgid "Task Management made easy"
 msgstr "La gestion de tâches facile"
-msg_pt-br "Gestão de tarefas fácil"
+msg_pt-br "Gestão de Tarefas fácil"
 
 #. Author of the plugin/theme
 msgid "Tirzen"
