@@ -639,7 +639,7 @@ msg_pt-br "Realmente apagar este item?"
 #: inc/views/admin/project_list.php:80
 msgid "Delete Permanently"
 msgstr "Effacer définitivement"
-msg_pt-br "Apagar permanentemente"
+msg_pt-br "Apagar Permanentemente"
 
 #: inc/views/admin/project_list.php:85
 msgid "Edit this item"
