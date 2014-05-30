@@ -345,7 +345,7 @@ msgid ""
 "Learn more about this plugin on the official <a href=\"%1$s\" target=\"_blank"
 "\">TaskFreak! website</a>."
 msgstr ""
-"Saiba mais sobre este plugin no site oficial <a href=\"%1$s\ target=\"_blank"\">TaskFreak!</a>."
+"Saiba mais sobre este plugin no site oficial <a href=\"%1$s\" target=\"_blank\">TaskFreak!</a>."
 
 #: inc/views/admin/dashboard.php:16
 msgid "Start working!"
@@ -958,6 +958,7 @@ msgstr "TaskFreak Free"
 
 #. Plugin URI of the plugin/theme
 msgid "http://www.taskfreak.com"
+msgstr "http://www.taskfreak.com"
 
 #. Description of the plugin/theme
 msgid "Task Management made easy"
