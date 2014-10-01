@@ -3,9 +3,9 @@ Contributors: taskfreak, HerveRenault
 Donate link: http://www.taskfreak.com/
 Tags: projects, tasks, management, todo, list, GTD, manage projects, project management, task management, team, planning, tracking
 Requires at least: 3.3
-Tested up to: 3.9.2
-Stable tag: 1.0.10
-Version: 1.0.10
+Tested up to: 4.0
+Stable tag: 1.0.11
+Version: 1.0.11
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -66,6 +66,10 @@ http://www.taskfreak.com and see details about the pro version
 10. Settings
 
 == Changelog ==
+
+= 1.0.11 =
+Replaced the "Show/Hide History" link by an icon for better compatibility with the 2014 theme.
+Force reload if it does not show up after the update.
 
 = 1.0.10 =
 Italian translation provided by Giorgio Draghetti <giorgio@tipinoncomuni.it>

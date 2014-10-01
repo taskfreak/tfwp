@@ -22,9 +22,11 @@ class tfk_front extends tzn_controller {
 			$options = get_option('tfk_options');
 			wp_enqueue_script('tznfrontjs', plugins_url('/js/front.js', TFK_ROOT_FILE), array('jquery'));
 			wp_localize_script('tznfrontjs', 'tznfrontjs_vars', array(
-					'plugins_url' 	=> plugins_url(),
-					'error_message'	=> __('An error has occured.', 'taskfreak'),
+					'plugins_url' 	    => plugins_url(),
+					'error_message'	    => __('An error has occured.', 'taskfreak'),
 					'datepicker_format' => tzn_tools::date_format_convert_php_jquery($options['format_date']),
+                    'task_hist_show'    => __('Show History', 'taskfreak'),
+                    'task_hist_hide'    => __('Hide History', 'taskfreak'),
 				)
 			);
 			wp_enqueue_script('jquery-ui-datepicker');

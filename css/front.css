@@ -144,8 +144,24 @@
 #tfk_task_details > p { display: table-cell; padding-right: 2em; }
 #tfk_task_details > p > span { display: block; }
 #tfk_task_details > p > span:first-child { display: block; color: #888; white-space: nowrap; }
-#tfk_task_history_toggle_hide, #tfk_task_history_toggle_show { font-size: 0.8em; }
-#tfk_task_history_toggle_hide { display: none; }
+#tfk_task_history_toggle {
+    text-decoration: none;
+    display: block;
+    opacity: 0.5;
+    width: 20px;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#tfk_task_history_toggle:before {
+    font-family: 'icomoon';
+    content: "\e004";
+    font-size: 20px;
+    margin-right: .5em;
+}
+#tfk_task_history_toggle.tfk_task_history_hidden {
+    opacity: 1;
+}
 #tfk_task_history { max-width: 90%; padding: 0; margin: 2em; }
 #tfk_task_history td { padding: 0 0.2em 0 0; }
 #tfk_task_description { margin-top: 2em; }
@@ -188,7 +204,6 @@
 #tfk_task_details .tfk_sts a + a + a { margin-right: 0; }
 #tfk_task_details .tfk_sts0 { background-color: white; }
 #tfk_task_details .tfk_sts1, #tfk_task_details .tfk_sts2, #tfk_task_details .tfk_sts3 { background-color: #bbb; }
-#tfk_task_hist_cntr { width: 7em; }
 
 /* task updates */
 @font-face {
@@ -239,6 +254,9 @@
 	#tfk_tasksheet .tfk_sts a { border: 2px solid white; outline: 2px solid #ddd; margin-right: 2px; }
 	#tfk_task_details .tfk_sts a { border: 2px solid white; outline: 2px solid #ddd; margin-right: 2px; }
 	#tfk_task_details .tfk_sts_lbl { display: inline-block; margin-left: 1em; font-size: 0.8em; white-space: nowrap; line-height: 28px; vertical-align: top; }
+    #tfk_task_history_toggle {
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 320px) {

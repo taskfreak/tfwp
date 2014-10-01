@@ -30,25 +30,23 @@ jQuery(document).ready(function() {
 		return false;
 	});
 	// view task history toggle
-	jQuery('#tfk_task_history_toggle_show').show();
+    jQuery('#tfk_task_history_toggle').addClass('tfk_task_history_hidden').attr('title', tznfrontjs_vars.task_hist_show);
 	jQuery('#tfk_task_history_toggle').click(function() {
-		if (jQuery('#tfk_task_history_toggle_hide').is(':hidden')) {
+		if (jQuery('#tfk_task_history_toggle').hasClass('tfk_task_history_hidden')) {
 			var $toggle = jQuery(this);
 			$toggle.css('cursor', 'wait');
 			jQuery.ajax({
 				url: this + '&t=' + (new Date().getTime()),
 				}).done(function(data) {
 					jQuery('#tfk_task_history').replaceWith(jQuery('#tfk_task_history', data));
+                    jQuery('#tfk_task_history_toggle').removeClass('tfk_task_history_hidden').attr('title', tznfrontjs_vars.task_hist_hide);
 			}).always(function() {
 				$toggle.css('cursor', 'pointer');
 				jQuery('#tfk_task_history').show();
-				jQuery('#tfk_task_history_toggle_show').hide();
-				jQuery('#tfk_task_history_toggle_hide').show();
 			});
 		} else {
 			jQuery('#tfk_task_history').hide();
-			jQuery('#tfk_task_history_toggle_show').show();
-			jQuery('#tfk_task_history_toggle_hide').hide();
+            jQuery('#tfk_task_history_toggle').addClass('tfk_task_history_hidden').attr('title', tznfrontjs_vars.task_hist_show);
 		}
 		return false;
 	});
@@ -116,10 +114,9 @@ jQuery(document).ready(function() {
 							jQuery('#tfk_sts' + i + '-' + clicked_a['id']).addClass('tfk_sts0').removeClass('tfk_sts1');
 						}
 						jQuery('#tfk_task_details .tfk_sts_lbl').text(extracted_message.substr(4));
-						if (jQuery('#tfk_task_history_toggle_show').is(':hidden')) {
+						if (!jQuery('#tfk_task_history_toggle').hasClass('tfk_task_history_hidden')) {
+                            jQuery('#tfk_task_history_toggle').addClass('tfk_task_history_hidden').attr('title', tznfrontjs_vars.task_hist_show);
 							jQuery('#tfk_task_history').hide();
-							jQuery('#tfk_task_history_toggle_show').show();
-							jQuery('#tfk_task_history_toggle_hide').hide();
 						}
 					} else {
 						alert(extracted_message.substr(4));

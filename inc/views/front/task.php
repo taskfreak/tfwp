@@ -58,10 +58,10 @@ $status_action_code = $this->data->get_status()->get('action_code');
 		<span class="tfk_hid"><?php _e('Current Status: ', 'taskfreak') ?></span><span class="tfk_sts_lbl"><?php _ex($this->data->get_status()->get_status(), 'one task', 'taskfreak') ?></span>
 	</p>
 	<p id="tfk_task_hist_cntr">
-		<a id="tfk_task_history_toggle" href="<?php echo add_query_arg('hist', $iid, tzn_tools::baselink()) ?>">
-			<span id="tfk_task_history_toggle_show"><?php _e('Show History', 'taskfreak') ?></span>
-			<span id="tfk_task_history_toggle_hide"><?php _e('Hide History', 'taskfreak') ?></span>
-		</a>
+		<a id="tfk_task_history_toggle" 
+            class="tfk_task_history_hidden"
+            href="<?php echo add_query_arg('hist', $iid, tzn_tools::baselink()) ?>" 
+            title="<?php _e('Task history', 'taskfreak') ?>"><?php _e('Task history', 'taskfreak') ?></a>
 	</p>
 </div>
 <table id="tfk_task_history"></table>
