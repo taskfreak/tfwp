@@ -378,7 +378,7 @@ class tfk_item_info extends tfk_item
 							FROM '.$this->db_table().' AS '.$this->db_alias().'
 							INNER JOIN '.$this->db_table('project').' AS project ON item.project_id = project.project_id
 							INNER JOIN '.$this->db_table('log').' AS item_status ON item.item_id = item_status.item_id
-							LEFT JOIN '.$this->db->prefix.'users AS user ON user.ID = item.user_id
+							LEFT JOIN '.$this->db->base_prefix.'users AS user ON user.ID = item.user_id
 							LEFT JOIN '.$this->db_table('item_comment').' AS item_comment ON item.item_id = item_comment.item_id
 							LEFT JOIN '.$this->db_table('item_file').' AS item_file ON item.item_id = item_file.item_id AND file_tags = "task"
 							',
@@ -454,7 +454,7 @@ class tfk_item_status_info extends tfk_item_status {
 					FROM '.$this->db_table().' AS log
 					LEFT JOIN '.$this->db_table('item').' AS item ON item.item_id = log.item_id
 					LEFT JOIN '.$this->db_table('project').' AS project ON project.project_id = log.project_id
-					LEFT JOIN '.$this->db->prefix.'users AS user ON user.ID = log.user_id',
+					LEFT JOIN '.$this->db->base_prefix.'users AS user ON user.ID = log.user_id',
 				'where' => '(log.item_id <> 0 OR project.trashed = 0)',
 				'having'=> tfk_user::get_roles_sql('who_read').' AND status > 0',
 				'order' => 'log_date DESC'

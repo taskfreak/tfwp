@@ -27,9 +27,15 @@ switch ($this->filters['filter_recent']) {
 		$filter = '';
 }
 
+if ($this->options['number_updates']) {
+	$date_delta = $this->options['number_updates'];
+} else {
+	$date_delta = 7;
+}
+
 $this->log->load_list(
 		array(
-			'where' => 'DATEDIFF(NOW(), log_date) < '.$this->options['number_updates'].
+			'where' => 'DATEDIFF(NOW(), log_date) < '.$date_delta.
 						($filter ? ' AND '.$filter : ''),
 		)
 );

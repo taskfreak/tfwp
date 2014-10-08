@@ -35,7 +35,7 @@ class tfk_user extends tzn_model
 	}
 	
 	public function db_table() {
-		return $this->db->prefix.'users';
+		return $this->db->base_prefix.'users';
 	}
 	
 	// --- ACCESS RIGHTS -------
