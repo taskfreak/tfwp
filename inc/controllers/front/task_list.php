@@ -26,8 +26,10 @@ if (isset($_REQUEST['npg']) && preg_match('/^\d+$/', $_REQUEST['npg'])) { // use
 	$this->page_size = $_REQUEST['npg'];
 } elseif (isset($_COOKIE['tfk_page_size']) && preg_match('/^\d+$/', $_COOKIE['tfk_page_size'])) {
 	$this->page_size = $_COOKIE['tfk_page_size'];
-} else {
+} elseif ($this->options['tasks_per_page']) {
 	$this->page_size = $this->options['tasks_per_page'];
+} else {
+	$this->page_size = 5;
 }
 
 // show "new task" or not

@@ -4,8 +4,8 @@ Donate link: http://www.taskfreak.com/
 Tags: projects, tasks, management, todo, list, GTD, manage projects, project management, task management, team, planning, tracking
 Requires at least: 3.3
 Tested up to: 4.0
-Stable tag: 1.0.12
-Version: 1.0.12
+Stable tag: 1.0.13
+Version: 1.0.13
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,8 @@ Advantages :
 4. Insert shortcode `[tfk_all]` in any page or post (or insert `<?php do_action('tfk_all'); ?>` in your template)
 5. Create at least one project through the 'TaskFreak!' menu in WordPress dashboard.
 
+Note: if your theme inserts unwanted `<br>`s in TaskFreak's output, then use this shortcode combination: `[raw][tfk_all][/raw]`
+
 == Frequently Asked Questions ==
 
 = Where can I get some help ? =
@@ -66,6 +68,10 @@ http://www.taskfreak.com and see details about the pro version
 10. Settings
 
 == Changelog ==
+
+= 1.0.13 =
+Bug fix: in the dashboard, the "Start working" link could contain unwanted parameters after changing task status.
+Documentation: Some themes insert unwanted <br>. In this case, use this shortcode combination `[raw][tfk_all][/raw]`
 
 = 1.0.12 =
 Bug fix for multisite setup.

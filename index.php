@@ -3,7 +3,7 @@
 Plugin Name: TaskFreak Free
 Plugin URI: http://www.taskfreak.com
 Description: Task Management made easy
-Version: 1.0.12
+Version: 1.0.13
 Author: Tirzen
 Author URI: http://www.tirzen.com
 License: GPL2

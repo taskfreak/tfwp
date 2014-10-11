@@ -51,8 +51,9 @@ class tfk_front extends tzn_controller {
 		$this->options = get_option('tfk_options');
 		
 		// update page url in options for widgets
-		if ($this->options['page_url'] != tzn_tools::baselink() || $this->options['page_id'] != get_the_ID()) {
-			$this->options['page_url'] = tzn_tools::baselink();
+		$baselink = tzn_tools::baselink();
+		if ($this->options['page_url'] != $baselink || $this->options['page_id'] != get_the_ID()) {
+			$this->options['page_url'] = $baselink;
 			$this->options['page_id'] = get_the_ID();
 			update_option('tfk_options', $this->options);
 		}
