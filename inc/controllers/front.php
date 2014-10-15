@@ -34,11 +34,11 @@ class tfk_front extends tzn_controller {
 			$wp_lang = preg_replace('/_..$/', '', $wp_lang);
 			if ($wp_lang != 'en') {
 				wp_register_script('jquery-ui-datepicker-l10n',
-									'https://raw.github.com/jquery/jquery-ui/master/ui/i18n/jquery.ui.datepicker-'.$wp_lang.'.js',
+									'//raw.githubusercontent.com/jquery/jquery-ui/master/ui/i18n/datepicker-'.$wp_lang.'.js',
 									array('jquery-ui-datepicker'));
 				wp_enqueue_script('jquery-ui-datepicker-l10n');
 			}
-			wp_enqueue_style('jquery-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
+			wp_enqueue_style('jquery-style', '//ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
 		}
 		add_action('wp_enqueue_scripts', 'tzn_localize_scripts');
 	}
