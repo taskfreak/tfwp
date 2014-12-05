@@ -34,7 +34,7 @@ class tfk_user extends tzn_model
 		);
 	}
 	
-	public function db_table() {
+	public function db_table($table = '') {
 		return $this->db->base_prefix.'users';
 	}
 	
@@ -85,15 +85,15 @@ class tfk_user extends tzn_model
 	
 	// --- DISABLE INSERT, UPDATE and DELETE from DB ---
 	
-	public function update() {
+	public function update($args='') {
 		return false;
 	}
 	
-	public function insert() {
+	public function insert($option='') {
 		return false;
 	}
 	
-	public function delete() {
+	public function delete($args='') {
 		return false;
 	}
 	

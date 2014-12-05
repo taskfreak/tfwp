@@ -153,7 +153,7 @@ class tfk_project extends tzn_model
 	/**
 	 * delete project
 	 */
-	public function delete() {
+	public function delete($args = '') {
 		// TODO delete files
 		return $this->db->query('DELETE '.$this->db_table('project').', ' // .$this->db_table('project_user').', '
 			.$this->db_table('log').', '.$this->db_table('item').', '.$this->db_table('item_comment')

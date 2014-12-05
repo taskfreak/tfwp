@@ -14,6 +14,8 @@ function tfk_install() {
 
 global $wpdb;
 
+$charset_collate = $wpdb->get_charset_collate();
+
 // register options
 $arr = array(
 	'version'	=> '1.0',
@@ -63,7 +65,7 @@ $sql = "CREATE TABLE $table (
   KEY project_id (project_id),
   KEY user_id (user_id),
   KEY author_id (author_id)
-);";
+) $charset_collate;";
 dbDelta($sql);
 
 $table = $wpdb->prefix.'tfk_item_status';
@@ -74,7 +76,7 @@ $sql = "CREATE TABLE $table (
   user_id mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY  (item_id,status_date),
   KEY itemId (user_id)
-);";
+) $charset_collate;";
 dbDelta($sql);
 
 $table = $wpdb->prefix.'tfk_item_like';
@@ -83,7 +85,7 @@ $sql = "CREATE TABLE $table (
   user_id mediumint(8) unsigned NOT NULL,
   post_date datetime NOT NULL,
   PRIMARY KEY  (item_id,user_id)
-);";
+) $charset_collate;";
 dbDelta($sql);
 
 $table = $wpdb->prefix.'tfk_item_comment';
@@ -95,7 +97,7 @@ $sql = "CREATE TABLE $table (
   body text NOT NULL,
   PRIMARY KEY  (item_comment_id),
   KEY itemId (item_id)
-);";
+) $charset_collate;";
 dbDelta($sql);
 
 $table = $wpdb->prefix.'tfk_item_comment_like';
@@ -105,7 +107,7 @@ $sql = "CREATE TABLE $table (
   post_date datetime NOT NULL,
   vote tinyint(1) unsigned NOT NULL,
   PRIMARY KEY  (item_comment_id,user_id)
-);";
+) $charset_collate;";
 dbDelta($sql);
 
 $table = $wpdb->prefix.'tfk_item_file';
@@ -121,7 +123,7 @@ $sql = "CREATE TABLE $table (
   file_tags varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY  (item_file_id),
   KEY item_id (item_id)
-);";
+) $charset_collate;";
 dbDelta($sql);
 
 	
@@ -137,7 +139,7 @@ $sql = "CREATE TABLE $table (
   creation_date datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   trashed tinyint(1) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY  (project_id)
-);";
+) $charset_collate;";
 dbDelta($sql);
 	
 $table = $wpdb->prefix.'tfk_project_user';
@@ -146,7 +148,7 @@ $sql = "CREATE TABLE $table (
   user_id mediumint(8) unsigned NOT NULL DEFAULT '0',
   position tinyint(2) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY  (project_id,user_id)
-);";
+) $charset_collate;";
 dbDelta($sql);
 
 $table = $wpdb->prefix.'tfk_project_status';
@@ -156,7 +158,7 @@ $sql = "CREATE TABLE $table (
   status_key tinyint(3) unsigned NOT NULL DEFAULT '0',
   user_id mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY  (project_id,status_date)
-);";
+) $charset_collate;";
 dbDelta($sql);
 
 $table = $wpdb->prefix.'tfk_log';
@@ -172,7 +174,7 @@ $sql = "CREATE TABLE $table (
   PRIMARY KEY  (log_date,user_id,action_code),
   KEY project_id (project_id),
   KEY item_id (item_id)
-)";
+) $charset_collate";
 dbDelta($sql);
 
 } // end install

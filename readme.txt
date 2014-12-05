@@ -3,9 +3,9 @@ Contributors: taskfreak, HerveRenault
 Donate link: http://www.taskfreak.com/
 Tags: projects, tasks, management, todo, list, GTD, manage projects, project management, task management, team, planning, tracking
 Requires at least: 3.3
-Tested up to: 4.0
-Stable tag: 1.0.14
-Version: 1.0.14
+Tested up to: 4.0.1
+Stable tag: 1.0.15
+Version: 1.0.15
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,13 +13,14 @@ Task management plugin from the authors of TaskFreak!
 
 == Description ==
 
-Manage tasks for yourself or within a group, company, association, etc.
+Manage tasks for yourself or within a group, company, organization, etc.
 Create projects or teams, then add tasks and assign to users.
 Add attachements, discuss tasks and follow their status.
 
 WordPress version of the standalone [TaskFreak!](http://taskfreak.com/) web application.
 
-Available in English, French, German, Italian, Polish, Portuguese. (language contributors welcome !)
+Available in English, French, German, Italian, Polish, Portuguese, Spanish.
+(language contributors are welcome!)
 
 Advantages :
 
@@ -68,6 +69,12 @@ http://www.taskfreak.com and see details about the pro version
 10. Settings
 
 == Changelog ==
+
+= 1.0.15 =
+Added: Spanish translation thanks to Jose Miranda http://www.webboricua.com
+Bug fix: missing charset collation in install (thanks to ViseirA)
+Bug fix: strict standards notice with E_STRICT error reporting enabled (thanks to sirmacik)
+Bug fix: improper enqueuing prevented MinQueue plugin from concatenating styles.
 
 = 1.0.14 =
 Bug fix: URL of localized datepickers changed + remove http(s) and let the browser use the proper protocol.

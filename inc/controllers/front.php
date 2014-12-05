@@ -17,32 +17,36 @@ class tfk_front extends tzn_controller {
 		$c = __CLASS__;
 		$obj = new $c();
 		add_shortcode('tfk_all', array($obj, 'tfk_all'));
-		
-		function tzn_localize_scripts() {
-			$options = get_option('tfk_options');
-			wp_enqueue_script('tznfrontjs', plugins_url('/js/front.js', TFK_ROOT_FILE), array('jquery'));
-			wp_localize_script('tznfrontjs', 'tznfrontjs_vars', array(
-					'plugins_url' 	    => plugins_url(),
-					'error_message'	    => __('An error has occured.', 'taskfreak'),
-					'datepicker_format' => tzn_tools::date_format_convert_php_jquery($options['format_date']),
-                    'task_hist_show'    => __('Show History', 'taskfreak'),
-                    'task_hist_hide'    => __('Hide History', 'taskfreak'),
-				)
-			);
-			wp_enqueue_script('jquery-ui-datepicker');
-			$wp_lang = get_locale();
-			$wp_lang = preg_replace('/_..$/', '', $wp_lang);
-			if ($wp_lang != 'en') {
-				wp_register_script('jquery-ui-datepicker-l10n',
-									'//raw.githubusercontent.com/jquery/jquery-ui/master/ui/i18n/datepicker-'.$wp_lang.'.js',
-									array('jquery-ui-datepicker'));
-				wp_enqueue_script('jquery-ui-datepicker-l10n');
-			}
-			wp_enqueue_style('jquery-style', '//ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
-		}
-		add_action('wp_enqueue_scripts', 'tzn_localize_scripts');
+                add_action('wp_enqueue_scripts', array($obj, 'tzn_scripts_and_styles'));
 	}
 
+        public function tzn_scripts_and_styles() {
+                wp_register_style('tznfrontcss', plugins_url('css/front.css', TFK_ROOT_FILE));
+		wp_enqueue_style('tznfrontcss');
+                
+                $options = get_option('tfk_options');
+                wp_enqueue_script('tznfrontjs', plugins_url('/js/front.js', TFK_ROOT_FILE), array('jquery'));
+                wp_localize_script('tznfrontjs', 'tznfrontjs_vars', array(
+                                'plugins_url' 	    => plugins_url(),
+                                'error_message'	    => __('An error has occured.', 'taskfreak'),
+                                'datepicker_format' => tzn_tools::date_format_convert_php_jquery($options['format_date']),
+                                'task_hist_show'    => __('Show History', 'taskfreak'),
+                                'task_hist_hide'    => __('Hide History', 'taskfreak'),
+                        )
+                );
+                wp_enqueue_script('jquery-ui-datepicker');
+                
+                $wp_lang = get_locale();
+                $wp_lang = preg_replace('/_..$/', '', $wp_lang);
+                if ($wp_lang != 'en') {
+                        wp_register_script('jquery-ui-datepicker-l10n',
+                                            '//raw.githubusercontent.com/jquery/jquery-ui/master/ui/i18n/datepicker-'.$wp_lang.'.js',
+                                            array('jquery-ui-datepicker'));
+                        wp_enqueue_script('jquery-ui-datepicker-l10n');
+                }
+                wp_enqueue_style('jquery-style', '//ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
+        }
+        
 	public function tfk_all() {
 		
 		$this->_mode = 'return';
@@ -75,9 +79,6 @@ class tfk_front extends tzn_controller {
 		if (isset($_GET['filter_recent']) && in_array($_GET['filter_recent'], array('all', 'tasks', 'projects', 'comments'))) {
 			$this->filters['filter_recent'] = $_GET['filter_recent'];
 		}
-		
-		wp_register_style('tznfrontcss', plugins_url('css/front.css', TFK_ROOT_FILE));
-		wp_enqueue_style('tznfrontcss');
 		
 		// ACTION
 		

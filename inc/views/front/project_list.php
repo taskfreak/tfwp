@@ -4,7 +4,7 @@
 <ul id="tfk_subfilters">
 <?php echo tfk_project_status::list_links($this->baselink, 'filter_project', $this->filters['filter_project']); ?>
 </ul>
-<table class="widefat">
+<table class="tfk_projects widefat">
 	<thead>
 		<tr>
 			<th style="width:6%"><?php _e('ID', 'taskfreak') ?></th>
