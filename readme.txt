@@ -3,9 +3,9 @@ Contributors: taskfreak, HerveRenault
 Donate link: http://www.taskfreak.com/
 Tags: projects, tasks, management, todo, list, GTD, manage projects, project management, task management, team, planning, tracking
 Requires at least: 3.3
-Tested up to: 4.0.1
-Stable tag: 1.0.15
-Version: 1.0.15
+Tested up to: 4.1
+Stable tag: 1.0.16
+Version: 1.0.16
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,7 +19,7 @@ Add attachements, discuss tasks and follow their status.
 
 WordPress version of the standalone [TaskFreak!](http://taskfreak.com/) web application.
 
-Available in English, French, German, Italian, Polish, Portuguese, Spanish.
+Available in Arabic, English, French, German, Italian, Polish, Portuguese, Spanish.
 (language contributors are welcome!)
 
 Advantages :
@@ -69,6 +69,9 @@ http://www.taskfreak.com and see details about the pro version
 10. Settings
 
 == Changelog ==
+
+= 1.0.16 =
+Added Arabic translation thanks to Ahmed Ghanem https://twitter.com/A91G
 
 = 1.0.15 =
 Added: Spanish translation thanks to Jose Miranda http://www.webboricua.com

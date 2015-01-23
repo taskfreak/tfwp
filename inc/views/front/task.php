@@ -65,7 +65,7 @@ $status_action_code = $this->data->get_status()->get('action_code');
 	</p>
 </div>
 <table id="tfk_task_history"></table>
-<p id="tfk_task_description"><?php echo $this->data->get('description') ?></p>
+<div id="tfk_task_description"><?php echo $this->data->get('description') ?></div>
 <?php if ($this->file->count()): 
 		$wp_upload_dir = wp_upload_dir(); ?>
 	<h3><?php _e('Attached files', 'taskfreak') ?></h3>
