@@ -1,4 +1,4 @@
-<!-- <?php printf("%-130s", "TF!WP_status_change_result : ".$this->message); ?> -->
+<!-- TF!WP_status_change_result : <?php echo $this->message ?> -->
 <p>
 <?php 
 if (substr($this->message, 0, 2) == 'OK') {

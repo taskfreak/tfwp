@@ -70,20 +70,19 @@ jQuery(document).ready(function() {
 		jQuery.ajax({
 			url: this + '&t=' + (new Date().getTime()),
 			}).done(function(data) {
-				var identifier = "TF!WP_status_change_result : ";
-				var identifier_pos = data.indexOf(identifier);
-				if (identifier_pos > -1) {
-					var extracted_message = jQuery.trim(data.substr(identifier_pos + identifier.length, 100));
-					if (extracted_message.substr(0,2) == 'OK') {
+                                var m = data.match("<!-- TF!WP_status_change_result : (.*?) -->");
+                                if (m) {
+					var extracted_message = m[1].substr(4);
+					if (m[1].substr(0,2) == 'OK') {
 						for (var i = 1; i <= clicked_a['level']; i++) {
 							jQuery('#tfk_sts' + i + '-' + clicked_a['id']).addClass('tfk_sts1').removeClass('tfk_sts0');
 						}
 						for (var i = parseInt(clicked_a['level']) + 1; i <= 3; i++) {
 							jQuery('#tfk_sts' + i + '-' + clicked_a['id']).addClass('tfk_sts0').removeClass('tfk_sts1');
 						}
-						jQuery('#tfk_col4-' + clicked_a['id']+ ' .tfk_sts_lbl').text(extracted_message.substr(4));
+						jQuery('#tfk_col4-' + clicked_a['id']+ ' .tfk_sts_lbl').text(extracted_message);
 					} else {
-						alert(extracted_message.substr(4));
+						alert(extracted_message);
 					}
 				} else {
 					alert(tznfrontjs_vars.error_message); // unknown error
@@ -102,24 +101,23 @@ jQuery(document).ready(function() {
 		jQuery.ajax({
 			url: this + '&t=' + (new Date().getTime()),
 			}).done(function(data) {
-				var identifier = "TF!WP_status_change_result : ";
-				var identifier_pos = data.indexOf(identifier);
-				if (identifier_pos > -1) {
-					var extracted_message = jQuery.trim(data.substr(identifier_pos + identifier.length, 100));
-					if (extracted_message.substr(0,2) == 'OK') {
+                                var m = data.match("<!-- TF!WP_status_change_result : (.*?) -->");
+                                if (m) {
+					var extracted_message = m[1].substr(4);
+					if (m[1].substr(0,2) == 'OK') {
 						for (var i = 1; i <= clicked_a['level']; i++) {
 							jQuery('#tfk_sts' + i + '-' + clicked_a['id']).addClass('tfk_sts1').removeClass('tfk_sts0');
 						}
 						for (var i = parseInt(clicked_a['level']) + 1; i <= 3; i++) {
 							jQuery('#tfk_sts' + i + '-' + clicked_a['id']).addClass('tfk_sts0').removeClass('tfk_sts1');
 						}
-						jQuery('#tfk_task_details .tfk_sts_lbl').text(extracted_message.substr(4));
+						jQuery('#tfk_task_details .tfk_sts_lbl').text(extracted_message);
 						if (!jQuery('#tfk_task_history_toggle').hasClass('tfk_task_history_hidden')) {
-                            jQuery('#tfk_task_history_toggle').addClass('tfk_task_history_hidden').attr('title', tznfrontjs_vars.task_hist_show);
+                                                        jQuery('#tfk_task_history_toggle').addClass('tfk_task_history_hidden').attr('title', tznfrontjs_vars.task_hist_show);
 							jQuery('#tfk_task_history').hide();
 						}
 					} else {
-						alert(extracted_message.substr(4));
+						alert(extracted_message);
 					}
 				} else {
 					alert(tznfrontjs_vars.error_message); // unknown error
