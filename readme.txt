@@ -3,9 +3,9 @@ Contributors: taskfreak, HerveRenault
 Donate link: http://www.taskfreak.com/
 Tags: projects, tasks, management, todo, list, GTD, manage projects, project management, task management, team, planning, tracking
 Requires at least: 3.3
-Tested up to: 4.1.1
-Stable tag: 1.0.17
-Version: 1.0.17
+Tested up to: 4.2.1
+Stable tag: 1.0.18
+Version: 1.0.18
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -69,6 +69,10 @@ http://www.taskfreak.com and see details about the pro version
 10. Settings
 
 == Changelog ==
+
+= 1.0.18 =
+Security fix (XSS)
+See http://arstechnica.com/security/2015/04/21/swarm-of-wordpress-plugins-susceptible-to-potentially-dangerous-exploits/
 
 = 1.0.17 =
 Improved way of retrieving status via Ajax (no impact on users)

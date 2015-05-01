@@ -27,7 +27,7 @@
 			echo '<tr>';
 			echo '<td>'.$pid.'</td>';
 			echo '<td>';
-			echo '<a href="'.add_query_arg('proj', $pid).'"><strong>'.$this->data->get('name').'</strong></a>';
+			echo '<a href="'.esc_url(add_query_arg('proj', $pid)).'"><strong>'.$this->data->get('name').'</strong></a>';
 			echo '</td>';
 			echo '<td>'._x($this->data->get('project_status')->get_status(), 'one project', 'taskfreak').'</td>';
 			echo '</tr>';

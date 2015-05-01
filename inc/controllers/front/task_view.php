@@ -90,7 +90,7 @@ if (isset($_POST['edit'])) {
 				$this->data->load();
 				$this->comment->errors['global_errors'] =
 					'<p class="tfk_ok">'
-						.'<a id="tfk_back_list" href="'.remove_query_arg('noheader').'#tfk_comment_'.$this->comment->get_uid().'">'
+						.'<a id="tfk_back_list" href="'.esc_url(remove_query_arg('noheader')).'#tfk_comment_'.$this->comment->get_uid().'">'
 							.__('See comment', 'taskfreak')
 						.'</a>'
 						.__('Comment saved.', 'taskfreak')

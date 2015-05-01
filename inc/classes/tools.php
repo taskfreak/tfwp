@@ -119,8 +119,7 @@ class tzn_tools {
 			if ("$selected" == "$p") {
 				$str .= '<li class="tfk_selected_filter">'.$label.'</li>';
 			} else {
-// 				$str .= '<li><a href="'.self::concat_url($url, $name.'='.$p).'">'.$label.'</a></li>';
-				$str .= '<li><a href="'.add_query_arg($name, $p, $url).'">'.$label.'</a></li>';
+				$str .= '<li><a href="'.esc_url(add_query_arg($name, $p, $url)).'">'.$label.'</a></li>';
 			}
 		}
 		return $str;

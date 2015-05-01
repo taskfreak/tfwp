@@ -1,9 +1,9 @@
 <?php 
 $iid = $this->data->get_uid();
 ?>
-<a id="tfk_back_list" href="<?php echo add_query_arg('view', $iid, remove_query_arg(array('hist', 'noheader'))) ?>"><?php _e('Back to task', 'taskfreak') ?></a>
+<a id="tfk_back_list" href="<?php echo esc_url(add_query_arg('view', $iid, remove_query_arg(array('hist', 'noheader')))) ?>"><?php _e('Back to task', 'taskfreak') ?></a>
 <h2 id="tfk_task_title">
-	<a id="tfk_task_link" href="<?php echo add_query_arg('view', $iid, tzn_tools::baselink()) ?>">
+	<a id="tfk_task_link" href="<?php echo esc_url(add_query_arg('view', $iid, tzn_tools::baselink())) ?>">
 		<?php echo $this->data->get('title') ?>
 	</a>
 </h2>

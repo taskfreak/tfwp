@@ -1,5 +1,5 @@
 <?php if ($this->user_can_post): ?>
-<a id="tfk_new_task" href="<?php echo add_query_arg('edit', '') ?>"><?php _e('New Task', 'taskfreak') ?></a>
+<a id="tfk_new_task" href="<?php echo esc_url(add_query_arg('edit', '')) ?>"><?php _e('New Task', 'taskfreak') ?></a>
 <?php endif; ?>
 <ul id="tfk_subfilters">
 <?php echo tfk_item_status::list_links($this->baselink, 'filter_task', $this->filters['filter_task'], ($this->data->count() ? $this->data->total() : null)); ?>
@@ -24,7 +24,7 @@ if ($this->data->count()) {
 	) as $sort): ?>
 		<li<?php echo (isset($_REQUEST['sort']) && $_REQUEST['sort'] == $sort[0]
 						&& isset($_REQUEST['ord']) && $_REQUEST['ord'] == $sort[2]	? ' class="tfk_selected_order"' : '') ?>>
-			<a href="<?php echo "//".$_SERVER['HTTP_HOST'].remove_query_arg('pg', add_query_arg(array('sort' => $sort[0], 'ord' => $sort[2]))) ?>"><?php echo $sort[1] ?></a>
+			<a href="<?php echo esc_url(remove_query_arg('pg', add_query_arg(array('sort' => $sort[0], 'ord' => $sort[2])))) ?>"><?php echo $sort[1] ?></a>
 		</li>
 	<?php endforeach; ?>
 	</ul>
@@ -68,7 +68,7 @@ if ($this->data->count()) {
 						</li>
 						<?php endif; ?>
 						<li class="tfk_desc">
-							<a	href="<?php echo add_query_arg('view', $iid).'#tfk_task_title'; ?>"
+							<a	href="<?php echo esc_url(add_query_arg('view', $iid)).'#tfk_task_title'; ?>"
 								title="<?php echo $this->data->get_description_extract(); ?>">
 								<?php echo $this->data->html('title'); ?>
 							</a>
@@ -91,7 +91,7 @@ if ($this->data->count()) {
 					<ul>
 						<li class="tfk_com">
 							<a title="<?php echo $this->data->get('comment_count').' '.($this->data->get('comment_count') ? _n('comment', 'comments', $this->data->get('comment_count'), 'taskfreak') : __('comment', 'taskfreak')) ?>" 
-								href="<?php echo add_query_arg('view', $iid).'#tfk_comments' ?>">
+								href="<?php echo esc_url(add_query_arg('view', $iid)).'#tfk_comments' ?>">
 								<?php echo $this->data->get('comment_count') ?>
 							</a>
 							<span class="tfk_hid">
@@ -100,7 +100,7 @@ if ($this->data->count()) {
 						</li>
 						<?php if ($this->data->value('file_count')): ?>
 						<li class="tfk_atch" title="<?php echo $this->data->get_attachments() ?>">
-							<a title="<?php echo $this->data->get_attachments() ?>" href="<?php echo add_query_arg('view', $iid).'#tfk_uploaded_files' ?>">
+							<a title="<?php echo $this->data->get_attachments() ?>" href="<?php echo esc_url(add_query_arg('view', $iid)).'#tfk_uploaded_files' ?>">
 								<?php echo $this->data->get('file_count') ?>
 							</a>
 							<span class="tfk_hid"><?php _e('Attached files', 'taskfreak') ?></span>
@@ -120,17 +120,17 @@ if ($this->data->count()) {
 							<?php $nonce = wp_create_nonce('status_changer') ?>
 							<a id="tfk_sts1-<?php echo $iid ?>" 
 								class="tfk_sts<?php echo $this->data->get('item_status')->get('action_code') > 0 ? 1 : 0 ?>" 
-								href="<?php echo add_query_arg(array('edit' => $iid, 'status' => 20, 'tfknonce' => $nonce)); ?>" 
+								href="<?php echo esc_url(add_query_arg(array('edit' => $iid, 'status' => 20, 'tfknonce' => $nonce))); ?>" 
 								title="<?php _e('Click to mark as In Progress', 'taskfreak') ?>">
 								<?php _ex('In Progress', 'one task', 'taskfreak') ?>
 							</a><a id="tfk_sts2-<?php echo $iid ?>" 
 								class="tfk_sts<?php echo $this->data->get('item_status')->get('action_code') > 20 ? 1 : 0 ?>" 
-								href="<?php echo add_query_arg(array('edit' => $iid, 'status' => 30, 'tfknonce' => $nonce)); ?>" 
+								href="<?php echo esc_url(add_query_arg(array('edit' => $iid, 'status' => 30, 'tfknonce' => $nonce))); ?>" 
 								title="<?php _e('Click to mark as Suspended', 'taskfreak') ?>">
 								<?php _ex('Suspended', 'one task', 'taskfreak') ?>
 							</a><a id="tfk_sts3-<?php echo $iid ?>" 
 								class="tfk_sts<?php echo $this->data->get('item_status')->get('action_code') > 30 ? 1 : 0 ?>" 
-								href="<?php echo add_query_arg(array('edit' => $iid, 'status' => 60, 'tfknonce' => $nonce)); ?>" 
+								href="<?php echo esc_url(add_query_arg(array('edit' => $iid, 'status' => 60, 'tfknonce' => $nonce))); ?>" 
 								title="<?php _e('Click to mark as Closed', 'taskfreak') ?>">
 								<?php _ex('Closed', 'one task', 'taskfreak') ?>
 							</a>
@@ -150,7 +150,7 @@ if ($this->data->count()) {
 	<ul>
 	<?php for ($p = 1 ; $p <= $this->npages ; $p++): ?>
 		<li<?php echo $this->page == $p ? ' class="tfk_current_page"' : '' ?>>
-			<a href="<?php echo add_query_arg('pg', $p) ?>"><?php echo $p ?></a>
+			<a href="<?php echo esc_url(add_query_arg('pg', $p)) ?>"><?php echo $p ?></a>
 		</li>	
 	<?php endfor; ?>
 	</ul>
@@ -161,7 +161,7 @@ if ($this->data->count()) {
 	<ul>
 	<?php foreach (array(5, 10, 20, 50, 100) as $npg): ?>
 		<li<?php echo $this->page_size == $npg ? ' class="tfk_selected_page_size"' : '' ?>>
-			<a href="<?php echo remove_query_arg('pg', add_query_arg('npg', $npg)) ?>"><?php echo $npg ?></a>
+			<a href="<?php echo esc_url(remove_query_arg('pg', add_query_arg('npg', $npg))) ?>"><?php echo $npg ?></a>
 		</li>
 	<?php endforeach; ?>
 	</ul>

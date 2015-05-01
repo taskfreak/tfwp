@@ -5,29 +5,55 @@
 		<?php
 		_e('Projects','taskfreak'); 
 		if ($this->is_manager) {	
-		?>
-		<a href="<?php echo add_query_arg('id','new',$this->linkadmin); ?>" class="add-new-h2"><?php _e('Add New', 'taskfreak'); ?></a>
-		<?php
+			?>
+			<a href="<?php echo esc_url(add_query_arg('id','new',$this->linkadmin)); ?>" class="add-new-h2">
+				<?php _e('Add New', 'taskfreak'); ?>
+			</a>
+			<?php
 		}
 		?>
 	</h2>
-	<ul class="subsubsub">
-		<li class="all"><a href="<?php echo add_query_arg('filter','all',$this->linkadmin); ?>"<?php if ($this->filter == 'all') echo ' class="current"'; ?>><?php _ex('All', 'projects', 'taskfreak'); ?></a> |</li>
+	<ul class="tfk_subsubsub">
+		<li class="all">
+			<a href="<?php echo esc_url(add_query_arg('filter','all',$this->linkadmin)); ?>"<?php if ($this->filter == 'all') echo ' class="current"'; ?>>
+				<?php _ex('All', 'projects', 'taskfreak'); ?>
+			</a>
+		</li>
 		<?php
 		if ($this->is_manager) {
-		?>
-		<li class="draft"><a href="<?php echo add_query_arg('filter','draft',$this->linkadmin); ?>"<?php if ($this->filter == 'draft') echo ' class="current"'; ?>><?php _ex('Draft', 'many projects', 'taskfreak'); ?> <!-- span class="count">(<span class="draft-count">0</span>)</span--></a> |</li>
-		<?php
+			?>
+			<li class="draft">
+				<a href="<?php echo esc_url(add_query_arg('filter','draft',$this->linkadmin)); ?>"<?php if ($this->filter == 'draft') echo ' class="current"'; ?>>
+					<?php _ex('Draft', 'many projects', 'taskfreak'); ?>
+				</a>
+			</li>
+			<?php
 		}
 		?>
-		<li class="opened"><a href="<?php echo add_query_arg('filter','20',$this->linkadmin); ?>"<?php if ($this->filter == '20') echo ' class="current"'; ?>><?php _ex('In Progress', 'many projects', 'taskfreak'); ?> <!-- span class="count">(<span class="opened-count">0</span>)</span--></a> |</li>
-		<li class="suspended"><a href="<?php echo add_query_arg('filter','30',$this->linkadmin); ?>"<?php if ($this->filter == '30') echo ' class="current"'; ?>><?php _ex('Suspended', 'many projects', 'taskfreak'); ?> <!-- span class="count">(<span class="suspended-count">0</span>)</span --></a> |</li>
-		<li class="closed"><a href="<?php echo add_query_arg('filter','60',$this->linkadmin); ?>"<?php if ($this->filter == '60') echo ' class="current"'; ?>><?php _ex('Closed', 'many projects', 'taskfreak'); ?> <!-- span class="count">(<span class="closed-count">0</span>)</span--></a><?php echo $this->is_manager?' |':''; ?></li>
+		<li class="opened">
+			<a href="<?php echo esc_url(add_query_arg('filter','20',$this->linkadmin)); ?>"<?php if ($this->filter == '20') echo ' class="current"'; ?>>
+				<?php _ex('In Progress', 'many projects', 'taskfreak'); ?>
+			</a>
+		</li>
+		<li class="suspended">
+			<a href="<?php echo esc_url(add_query_arg('filter','30',$this->linkadmin)); ?>"<?php if ($this->filter == '30') echo ' class="current"'; ?>>
+				<?php _ex('Suspended', 'many projects', 'taskfreak'); ?>
+			</a>
+		</li>
+		<li class="closed">
+			<a href="<?php echo esc_url(add_query_arg('filter','60',$this->linkadmin)); ?>"<?php if ($this->filter == '60') echo ' class="current"'; ?>>
+				<?php _ex('Closed', 'many projects', 'taskfreak'); ?>
+			</a>
+		</li>
 		<?php
 		if ($this->is_manager) {
-		?>
-		<li class="archive"><a href="<?php echo add_query_arg('filter','trash',$this->linkadmin); ?>"<?php if ($this->filter == 'trash') echo ' class="current"'; ?>><?php _e('Trash', 'taskfreak'); ?> <!--span class="count">(<span class="archive-count">0</span>)</span--></a></li>
-		<?php
+			?>
+			<li class="archive">
+				<a href="<?php echo esc_url(add_query_arg('filter','trash',$this->linkadmin)); ?>"<?php if ($this->filter == 'trash') echo ' class="current"'; ?>>
+					<?php _e('Trash', 'taskfreak'); ?>
+				</a>
+			</li>
+			<?php
 		}
 		?>
 	</ul>	
@@ -82,8 +108,8 @@
 						// project is alive
 						echo '<a href="'.$lnkadm.'"><strong>'.$this->data->get('name').'</strong></a>';
 						echo '<div class="row-actions">'
-							.'<span class="edit"><a href="'.$lnkadm.'" title="'.esc_attr(__('Edit this item', 'taskfreak')).'">'.__('Edit', 'taskfreak').'</a> | </span>'
-							.'<span class="view"><a href="'.$lnkfrt.'" title="'.esc_attr(__('View', 'taskfreak')).'" rel="permalink">'.__('View', 'taskfreak').'</a></span>'
+							.'<span class="edit"><a href="'.esc_url($lnkadm).'" title="'.esc_attr(__('Edit this item', 'taskfreak')).'">'.__('Edit', 'taskfreak').'</a> | </span>'
+							.'<span class="view"><a href="'.esc_url($lnkfrt).'" title="'.esc_attr(__('View', 'taskfreak')).'" rel="permalink">'.__('View', 'taskfreak').'</a></span>'
 							.'</div>';
 					}
 				} else {

@@ -1,11 +1,11 @@
 <?php echo $this->data->errors['global_errors'] ?>
 <?php $iid = $this->data->value('item_id') ?>
-<form name="my_form" action="<?php echo add_query_arg('noheader', 1); ?>" enctype="multipart/form-data" method="post" id="tfk_edit_task_form">
+<form name="my_form" action="<?php echo esc_url(add_query_arg('noheader', 1)); ?>" enctype="multipart/form-data" method="post" id="tfk_edit_task_form">
 	<input type="hidden" name="edit" value="<?php echo $iid; ?>">
 	
 	<fieldset>
 		
-		<a id="tfk_back_list" href="<?php echo remove_query_arg(array('edit', 'noheader')).'#tfk_row-'.$iid ?>"><?php _e('Back to list', 'taskfreak') ?></a>
+		<a id="tfk_back_list" href="<?php echo esc_url(remove_query_arg(array('edit', 'noheader'))).'#tfk_row-'.$iid ?>"><?php _e('Back to list', 'taskfreak') ?></a>
 		<h3><?php echo $this->pid ? __('Edit Task', 'taskfreak') : __('New Task', 'taskfreak') ?></h3>
 		
 		<ol>
@@ -17,7 +17,7 @@
 			<li>
 				<label for="tfk_project"><?php _e('Project', 'taskfreak') ?></label>
 				<?php if ($this->projects->count()): ?>
-					<select name="project_id" id="tfk_project" data-ajax="<?php echo add_query_arg('js', 1, tzn_tools::baselink()) ?>">
+					<select name="project_id" id="tfk_project" data-ajax="<?php echo esc_url(add_query_arg('js', 1, tzn_tools::baselink())) ?>">
 						<?php while ($obj = $this->projects->next(true)):?>
 							<option value="<?php echo $obj->get_uid(); ?>"<?php 
 								if ($this->pid && $this->data->get('project')->value('project_id') == $obj->get_uid()

@@ -2,7 +2,7 @@
 	$this->view_inc('front/nav.php');
 ?>
 <ul id="tfk_breadcrumb">
-	<li><a href="<?php echo add_query_arg('mode', 'projects', tzn_tools::baselink()) ?>"><?php _e('All Projects','taskfreak') ?></a></li>
+	<li><a href="<?php echo esc_url(add_query_arg('mode', 'projects', tzn_tools::baselink())) ?>"><?php _e('All Projects','taskfreak') ?></a></li>
 	<li><?php echo $this->project->html('name'); ?></li>
 </ul>
 <?php 

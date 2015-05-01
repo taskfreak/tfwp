@@ -10,9 +10,9 @@ TFWP dashboard
 */
 
 $this->options = get_option('tfk_options');
-$this->linktsk = add_query_arg('mode', 'tasks', $this->options['page_url']);
+$this->linktsk = esc_url(add_query_arg('mode', 'tasks', $this->options['page_url']));
 $this->linkprj = '?page=taskfreak_projects';
-$this->linkupd = add_query_arg('mode', 'recent', $this->options['page_url']);
+$this->linkupd = esc_url(add_query_arg('mode', 'recent', $this->options['page_url']));
 
 // User tasks
 

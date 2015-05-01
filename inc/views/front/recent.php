@@ -31,7 +31,7 @@
 			</span>
 			<?php
 			if ($this->log->get('type') == "task") {
-				$task_link = remove_query_arg('mode', add_query_arg('view', $this->log->get('item_id'), $this->baselink));
+				$task_link = esc_url(remove_query_arg('mode', add_query_arg('view', $this->log->get('item_id'), $this->baselink)));
 				if ($this->log->get('comment_id'))
 					echo __('commented task', 'taskfreak').' <a href="'.$task_link.'#tfk_comment_'.$this->log->get('comment_id').'">'.$this->log->get('title_or_name').'</a>';
 				elseif ($this->log->get('info') == 'creation')
@@ -41,7 +41,7 @@
 				else
 					echo __('modified task', 'taskfreak').' <a href="'.$task_link.'">'.$this->log->get('title_or_name').'</a> <small>('.$this->log->get_info().')</small>';
 			} else {
-				$project_link = remove_query_arg('mode', add_query_arg('proj', $this->log->get('project_id'), $this->baselink));
+				$project_link = esc_url(remove_query_arg('mode', add_query_arg('proj', $this->log->get('project_id'), $this->baselink)));
 				if ($this->log->get('info') == 'creation')
 					echo __('created project', 'taskfreak').' <a href="'.$project_link.'">'.$this->log->get('title_or_name').'</a>';
 				elseif ($this->log->get('action_code') != '')
@@ -55,4 +55,4 @@
 <?php else: ?>
 	<?php _e('Nothing, for the moment', 'taskfreak') ?>
 <?php endif; ?>
-</div>
+</div><!-- .tfk_updates -->

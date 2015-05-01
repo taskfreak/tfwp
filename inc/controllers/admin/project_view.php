@@ -22,7 +22,7 @@ if ($this->pid) {
 
 // TODO, view project details and list users
 
-// TEMPORARY : redirect to page in front office, of list if not possible
+// TEMPORARY : redirect to page in front office, or list if not possible
 
 if (headers_sent()) {
 	$this->call('admin/project_list.php');
@@ -31,4 +31,5 @@ if (headers_sent()) {
 		'mode'		=> 'projects',
 		'proj'		=> $this->pid
 	), $this->linkfront));
+	exit();
 }

@@ -18,9 +18,6 @@ class tfk_admin extends tzn_controller {
 		$obj = new $c();
 		add_action('admin_menu', array($obj, 'init_menu'));
 		add_filter('plugin_action_links', array($obj,'init_plugin_links'), 10, 2);
-		add_action('wp_ajax_tfk_project_user', array($obj, 'project_user'));
-		add_action('wp_ajax_tfk_project_user_add', array($obj, 'project_user_add'));
-		add_action('wp_ajax_tfk_project_user_edit', array($obj, 'project_user_edit'));
 	}
 
 	/**
@@ -58,32 +55,7 @@ class tfk_admin extends tzn_controller {
 		} else if ($this->is_manager) {
 			// only editor and admin can add/edit projects (any projects)
 			$this->call('admin/project_edit.php');
-		} else {
-			// others can see project users, but not modify project
-			$this->call('admin/project_view.php');
 		}
-	}
-	
-	/**
-	 * Manage project-member relation (ajax request)
-	 * show dialogs in popup
-	 */
-	public function project_user() {
-		$this->call('admin/project_user.php');
-	}
-	
-	/**
-	 * Add user to project (ajax request)
-	 */
-	public function project_user_add() {
-		$this->call('admin/project_user_add.php');
-	}
-	
-	/**
-	 * Edit user's position in project (ajax request)
-	 */
-	public function project_user_edit() {
-		$this->call('admin/project_user_edit.php');
 	}
 	
 	/**

@@ -55,4 +55,8 @@ $this->data->load_list(
 		'page'		=> empty($_REQUEST['pg'])?1:$_REQUEST['pg']
 	)
 );
+
+wp_register_style( 'tznadmincss', plugins_url('css/admin.css', TFK_ROOT_FILE));
+wp_enqueue_style( 'tznadmincss' );
+
 $this->view('admin/project_list.php');

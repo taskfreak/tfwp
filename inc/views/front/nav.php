@@ -11,7 +11,7 @@ foreach ($arr as $lnk => $label) {
 	if ($this->mode == $lnk) {
 		echo '<li class="tfk_selected_filter">'.$label.'</li>';
 	} else {
-		echo '<li><a href="'.add_query_arg('mode', $lnk, tzn_tools::baselink()).'">'.$label.'</a></li>';
+		echo '<li><a href="'.esc_url(add_query_arg('mode', $lnk, tzn_tools::baselink())).'">'.$label.'</a></li>';
 	}
 }
 ?>

@@ -60,3 +60,17 @@ table.tfk_stats tbody tr:hover th, table.tfk_stats tbody tr:hover td {
 .tzn_option_panel {
 	padding: .5em 0;
 }
+.tfk_subsubsub li {
+	display: inline;
+}
+.tfk_subsubsub li + li:before {
+	content: " | "; 
+	font-weight: normal;
+}
+.tfk_subsubsub a {
+	text-decoration: none;
+}
+.tfk_subsubsub a.current {
+	font-weight: bold;
+	color: #555;
+}
