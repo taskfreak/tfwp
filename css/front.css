@@ -46,6 +46,9 @@ body.rtl #tfk_tasksheet li { margin-left: initial; margin-right: 0 !important; }
 #tfk_tasksheet .tfk_pr3.tfk_late .tfk_prox { background-image: linear-gradient(to right, green, green) }
 #tfk_tasksheet .tfk_none .tfk_prox { background: #eee; }
 
+#tfk_tasksheet .tfk_pr1 .tfk_desc.tfk_size { font-size: 150%; }
+#tfk_tasksheet .tfk_pr2 .tfk_desc.tfk_size { font-size: 120%; }
+
 #tfk_tasksheet .tfk_desc, #tfk_tasksheet .tfk_prj { display: block; }
 #tfk_tasksheet .tfk_prj { margin: 0.3em 0; font-size: 0.9em; }
 #tfk_tasksheet .tfk_usr, #tfk_tasksheet .tfk_upd { display: inline; }
