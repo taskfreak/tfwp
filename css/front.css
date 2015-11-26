@@ -215,6 +215,7 @@ body.rtl #tfk_back_list { float: left; margin-left: 0; margin-right: 1em; }
 #tfk_task_details .tfk_sts a + a + a { margin-right: 0; }
 #tfk_task_details .tfk_sts0 { background-color: white; }
 #tfk_task_details .tfk_sts1, #tfk_task_details .tfk_sts2, #tfk_task_details .tfk_sts3 { background-color: #bbb; }
+#tfk_deadline_date { width: 10em; }
 
 /* task updates */
 @font-face {
