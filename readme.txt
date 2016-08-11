@@ -4,8 +4,8 @@ Donate link: http://www.taskfreak.com/
 Tags: projects, tasks, management, todo, list, GTD, manage projects, project management, task management, team, planning, tracking
 Requires at least: 3.3
 Tested up to: 4.2.1
-Stable tag: 1.0.18
-Version: 1.0.18
+Stable tag: 1.0.19
+Version: 1.0.19
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
